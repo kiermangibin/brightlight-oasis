@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Brightlight Oasis - Psychiatry &amp; Counseling in TX, OR &amp; AZ</title>
+	<meta name="description" content="Brightlight Oasis provides psychiatry, medication management, psychotherapy, IOP, addiction treatment, ADHD testing and Spravato care across Texas, Oregon and Arizona. Same-day telehealth appointments, no waitlist.">
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+	<!-- Fonts - Montserrat for UI/body; headings use the Times/Georgia serif
+	     stack from brightlightoasis.com, which needs no webfont. -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+	<!-- Tailwind (browser build - swap for a compiled stylesheet in production) -->
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<style type="text/tailwindcss">
+		/* Brightlight Oasis brand palette - see assets/css/custom.css for provenance */
+		@theme {
+			--color-primary: #6F397E;
+			--color-primarydark: #572D64;
+			--color-primarylight: #F0E7F3;
+			--color-teal: #06DBB8;
+			--color-tealdeep: #089EAC;
+			--color-peach: #F0C090;
+			--color-green: #185157;
+			--color-secondary: #160042;
+			--color-secondarylight: #282556;
+			--color-heading: #160042;
+			--color-body: #6B7094;
+			--color-light: #F3F5FB;
+			--color-accent: #06DBB8;
+			--font-title: "Montserrat", sans-serif;
+		}
+	</style>
+
+	<link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body class="antialiased">
+
+<!-- ======================================================== HEADER ====== -->
+<header class="site-header absolute top-0 left-0 z-[999] w-full">
+	<!-- Top bar -->
+	<div class="top-banner bg-[#004D49] text-white/88 py-2.5 hidden lg:block">
+		<div class="max-w-[1320px] mx-auto px-6 flex items-center justify-between text-sm">
+			<ul class="flex items-center gap-6">
+				<li><a href="tel:+15551234567" class="hover:text-teal transition"><i class="fa-solid fa-phone-volume text-teal me-2"></i>+1 (555) 123-4567</a></li>
+				<li><a href="mailto:info@brightlightoasis.com" class="hover:text-teal transition"><i class="fa-regular fa-envelope text-teal me-2"></i>info@brightlightoasis.com</a></li>
+				<li class="hidden xl:block"><i class="fa-solid fa-location-dot text-teal me-2"></i>Serving Texas, Oregon &amp; Arizona</li>
+			</ul>
+			<ul class="flex items-center gap-5">
+				<li><a href="#" aria-label="Facebook" class="hover:text-teal transition"><i class="fa-brands fa-facebook-f"></i></a></li>
+				<li><a href="#" aria-label="Instagram" class="hover:text-teal transition"><i class="fa-brands fa-instagram"></i></a></li>
+				<li><a href="#" aria-label="TikTok" class="hover:text-teal transition"><i class="fa-brands fa-tiktok"></i></a></li>
+				<li><a href="#" aria-label="LinkedIn" class="hover:text-teal transition"><i class="fa-brands fa-linkedin-in"></i></a></li>
+				<li><a href="#" aria-label="YouTube" class="hover:text-teal transition"><i class="fa-brands fa-youtube"></i></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Main bar -->
+	<div class="sticky-bar w-full pt-4 lg:pt-0">
+		<div class="max-w-[1320px] mx-auto px-3 sm:px-6">
+			<div class="header-pill relative flex items-center rounded-[28px] bg-white px-5 lg:px-6 xl:px-8 shadow-[0_12px_36px_rgba(22,0,66,0.12)]">
+
+				<!-- Logo -->
+				<a href="index.html" class="flex items-center h-[72px] lg:h-20 shrink-0" aria-label="Brightlight Oasis home">
+					<img src="assets/img/logo.png" alt="Brightlight Oasis - Psychiatry &amp; Counseling" class="h-11 lg:h-10 xl:h-14 w-auto" width="564" height="153">
+				</a>
+
+				<!-- Mobile toggler -->
+				<button class="nav-toggler lg:hidden ms-auto size-11 rounded-lg bg-light relative" type="button" aria-label="Toggle navigation" aria-expanded="false">
+					<span class="absolute left-3 top-[15px] h-0.5 w-5 rounded bg-secondary"></span>
+					<span class="absolute left-3 top-[21px] h-0.5 w-[22px] rounded bg-secondary"></span>
+					<span class="absolute left-3 top-[27px] h-0.5 w-3.5 rounded bg-secondary"></span>
+				</button>
+				<div class="nav-overlay lg:hidden"></div>
+
+				<!-- Navigation -->
+				<nav class="header-nav lg:flex lg:ms-auto">
+					<div class="flex items-center justify-between py-5 lg:hidden">
+						<span class="font-bold text-secondary text-lg">Menu</span>
+						<button class="nav-close size-9 rounded-lg bg-light text-secondary" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+					</div>
+
+					<ul class="lg:flex lg:items-center">
+						<li class="max-lg:border-b max-lg:border-gray-100">
+							<a href="index.html" class="block lg:py-6 py-3 lg:px-2 xl:px-3.5 max-xl:lg:text-[15px] font-medium text-secondary hover:text-primary transition whitespace-nowrap">Home</a>
+						</li>
+
+						<li class="has-sub relative max-lg:border-b max-lg:border-gray-100">
+							<a href="#about" class="flex items-center justify-between lg:py-6 py-3 lg:px-2 xl:px-3.5 max-xl:lg:text-[15px] font-medium text-secondary hover:text-primary transition whitespace-nowrap">
+								About <i class="fa-solid fa-chevron-right sub-arrow ms-1.5 text-[10px] transition lg:rotate-90"></i>
+							</a>
+							<ul class="sub-menu">
+								<li><a href="#about" class="block px-6 py-2 text-sm text-body hover:text-primary transition">Our Story</a></li>
+								<li><a href="#about" class="block px-6 py-2 text-sm text-body hover:text-primary transition">Our Values</a></li>
+								<li><a href="#team" class="block px-6 py-2 text-sm text-body hover:text-primary transition">Our Team</a></li>
+								<li><a href="#testimonials" class="block px-6 py-2 text-sm text-body hover:text-primary transition">Testimonials</a></li>
+							</ul>
+						</li>
+
+						<li class="has-sub relative max-lg:border-b max-lg:border-gray-100">
+							<a href="#services" class="flex items-center justify-between lg:py-6 py-3 lg:px-2 xl:px-3.5 max-xl:lg:text-[15px] font-medium text-secondary hover:text-primary transition whitespace-nowrap">
+								Our Services <i class="fa-solid fa-chevron-right sub-arrow ms-1.5 text-[10px] transition lg:rotate-90"></i>
+							</a>
+							<ul class="sub-menu">
+								<li><a href="#services" class="block px-6 py-2 text-sm text-body hover:text-primary transition">Psychiatry &amp; Medication Management</a></li>
+								<li><a href="#services" class="block px-6 py-2 text-sm text-body hover:text-primary transition">Psychotherapy / Counseling</a></li>
+								<li><a href="#services" class="block px-6 py-2 text-sm text-body hover:text-primary transition">Intensive Outpatient Program</a></li>
+								<li><a href="#services" class="block px-6 py-2 text-sm text-body hover:text-primary transition">Addiction &amp; Suboxone Therapy</a></li>
+								<li><a href="#services" class="block px-6 py-2 text-sm text-body hover:text-primary transition">Weight Loss Program</a></li>
+								<li><a href="#services" class="block px-6 py-2 text-sm text-body hover:text-primary transition">ADHD Testing</a></li>
+								<li><a href="#services" class="block px-6 py-2 text-sm text-body hover:text-primary transition">Spravato&reg; Treatment</a></li>
+							</ul>
+						</li>
+
+						<li class="max-lg:border-b max-lg:border-gray-100">
+							<a href="#locations" class="block lg:py-6 py-3 lg:px-2 xl:px-3.5 max-xl:lg:text-[15px] font-medium text-secondary hover:text-primary transition whitespace-nowrap">Locations</a>
+						</li>
+						<li class="max-lg:border-b max-lg:border-gray-100">
+							<a href="#insurance" class="block lg:py-6 py-3 lg:px-2 xl:px-3.5 max-xl:lg:text-[15px] font-medium text-secondary hover:text-primary transition whitespace-nowrap">Insurance</a>
+						</li>
+
+						<li class="has-sub relative max-lg:border-b max-lg:border-gray-100">
+							<a href="#blog" class="flex items-center justify-between lg:py-6 py-3 lg:px-2 xl:px-3.5 max-xl:lg:text-[15px] font-medium text-secondary hover:text-primary transition whitespace-nowrap">
+								Resources <i class="fa-solid fa-chevron-right sub-arrow ms-1.5 text-[10px] transition lg:rotate-90"></i>
+							</a>
+							<ul class="sub-menu">
+								<li><a href="#conditions" class="block px-6 py-2 text-sm text-body hover:text-primary transition">Conditions We Treat</a></li>
+								<li><a href="#services" class="block px-6 py-2 text-sm text-body hover:text-primary transition">Tele-Health</a></li>
+								<li><a href="#blog" class="block px-6 py-2 text-sm text-body hover:text-primary transition">Blog</a></li>
+								<li><a href="#pricing" class="block px-6 py-2 text-sm text-body hover:text-primary transition">Self-Pay Rates</a></li>
+							</ul>
+						</li>
+
+						<li class="max-lg:border-b max-lg:border-gray-100">
+							<a href="#contact" class="block lg:py-6 py-3 lg:px-2 xl:px-3.5 max-xl:lg:text-[15px] font-medium text-secondary hover:text-primary transition whitespace-nowrap">Contact</a>
+						</li>
+
+						<li class="lg:hidden pt-5">
+							<a href="#appointment" class="btn btn-primary w-full justify-center">Book Appointment</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="hidden lg:flex items-center ms-3 xl:ms-6">
+					<a href="#appointment" class="btn btn-primary max-xl:px-5 max-xl:text-[13px]">Book Appointment</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main>
+
+<!-- ========================================================= HERO ======= -->
+<section class="hero-section relative z-[1] overflow-hidden pt-40 lg:pt-52 xl:pt-56 pb-28 lg:pb-44">
+	<!-- ambient glows, drawn from the logo ring: teal → teal-deep → purple -->
+	<div class="absolute -top-24 -left-24 size-72 rounded-full bg-teal/35 blur-[110px] -z-[1]"></div>
+	<div class="absolute top-10 right-0 size-80 rounded-full bg-primary/20 blur-[120px] -z-[1]"></div>
+	<div class="absolute bottom-0 left-1/3 size-72 rounded-full bg-tealdeep/20 blur-[120px] -z-[1]"></div>
+
+	<div class="max-w-[1320px] mx-auto px-6">
+		<div class="flex flex-wrap items-center -mx-4">
+
+			<!-- Copy -->
+			<div class="w-full lg:w-1/2 px-4">
+				<h1 class="text-[34px] sm:text-5xl xl:text-6xl 2xl:text-[68px] font-bold leading-[1.12] mb-6" data-reveal data-delay="0.1s">
+					Timely Mental Health Care at Your
+					<span class="relative inline-block">Fingertips</span>
+				</h1>
+
+				<div class="max-w-[600px] border-s-4 border-teal bg-gradient-to-r from-teal/15 to-transparent text-secondary py-3.5 px-5 rounded-e-lg mb-8 lg:text-lg" data-reveal data-delay="0.25s">
+					Same-day Zoom appointments available. No waitlist - a comprehensive, individualized treatment plan without compromising evidence-based guidelines.
+				</div>
+
+				<div class="mb-10" data-reveal data-delay="0.4s">
+					<div class="flex items-center gap-3 mb-4">
+						<div class="flex items-center bg-white rounded-full shadow-[0_16px_40px_rgba(22,0,66,0.12)] py-2.5 ps-4 pe-6 sm:pe-10">
+							<div class="flex pe-4 me-4 border-e border-black/10">
+								<span class="mini-avatar -ms-3 first:ms-0">GB</span>
+								<span class="mini-avatar -ms-3">AS</span>
+								<span class="mini-avatar -ms-3">JA</span>
+								<span class="mini-avatar -ms-3">AA</span>
+							</div>
+							<span class="text-xs sm:text-base text-secondary leading-tight">Talk to a licensed<br class="sm:hidden"> provider today</span>
+						</div>
+						<a href="#team" class="btn btn-white btn-square size-14 md:size-16 shadow-[0_16px_40px_rgba(22,0,66,0.12)]" aria-label="Meet the team">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+								<path d="M7 17L17 7" stroke="var(--primary)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M7 7H17V17" stroke="var(--primary)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+					</div>
+					<div class="flex items-center gap-1.5 text-secondary text-sm font-medium">
+						<ul class="flex gap-0.5 text-yellow-400" aria-label="Rated 4.8 out of 5">
+							<li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>
+						</ul>
+						<span class="font-bold">(4.8)</span>
+						<span>from patients across TX, OR &amp; AZ</span>
+					</div>
+				</div>
+
+				<div class="flex flex-wrap gap-3" data-reveal data-delay="0.55s">
+					<a href="#appointment" class="btn btn-teal">Book an Appointment</a>
+					<a href="#services" class="btn btn-outline btn-outline-brand">See all our services</a>
+				</div>
+			</div>
+
+			<!-- Visual -->
+			<div class="w-full lg:w-1/2 px-4 mt-16 lg:mt-0" data-reveal="right" data-delay="0.4s">
+				<div class="relative max-w-[560px] mx-auto lg:mx-0 lg:ms-auto">
+					<div class="absolute inset-x-0 -bottom-[8%] mx-auto w-[88%] aspect-square rounded-full bg-gradient-to-b from-primary/20 to-transparent -z-[1]"></div>
+
+					<img class="w-[78%] mx-auto rounded-[999px_999px_2rem_2rem] object-cover object-top aspect-[3/4]" src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/671adde1da193f971d909d1e_64bd64c21c8fbfa7a8e0a099_IMG_0916-p-800.jpg" alt="Brightlight Oasis psychiatric provider" width="720" height="960">
+
+					<!-- floating: rating pill -->
+					<div class="absolute top-[18%] -left-2 sm:left-0 lg:-left-8 bg-white rounded-2xl shadow-[0_18px_45px_rgba(22,0,66,0.15)] p-4 animate-move3 max-w-[190px]">
+						<div class="flex items-center gap-3">
+							<span class="grid place-items-center size-11 rounded-xl bg-teal/15 text-tealdeep text-lg"><i class="fa-solid fa-heart-pulse"></i></span>
+							<div>
+								<span class="block text-lg font-bold text-secondary leading-none">98%</span>
+								<span class="block text-xs">would recommend</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- floating: telehealth badge -->
+					<div class="absolute top-[6%] right-2 lg:right-6 size-20 xl:size-24 rounded-full bg-white shadow-[0_18px_45px_rgba(22,0,66,0.15)] grid place-items-center animate-move4">
+						<span class="text-center leading-tight">
+							<i class="fa-solid fa-video text-tealdeep text-xl block mb-1"></i>
+							<span class="block text-[9px] xl:text-[10px] font-semibold text-secondary whitespace-nowrap">Same-day</span>
+						</span>
+					</div>
+
+					<!-- floating: providers card -->
+					<div class="absolute -bottom-8 right-0 lg:-right-6 w-[260px] bg-white rounded-2xl shadow-[0_22px_55px_rgba(22,0,66,0.18)] p-5 hidden sm:block animate-move1">
+						<div class="mb-4">
+							<h5 class="text-lg font-semibold mb-0">Available Providers</h5>
+							<span class="text-xs">Select who you'd like to see</span>
+						</div>
+						<label class="flex items-center mb-3.5 cursor-pointer">
+							<img class="rounded-full size-11 object-cover object-top" src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/671adde5ae3d00f17a76c36a_648c8d6f077195f061187a01_IMG_0699.jpg" alt="Dr. Gidion Buma" loading="lazy">
+							<span class="ms-2.5">
+								<span class="block text-sm font-medium text-secondary">Dr. Gidion Buma</span>
+								<span class="block text-xs">DNP PMHNP-BC</span>
+							</span>
+							<input class="radio-dot ms-auto" type="radio" name="heroProvider" checked>
+						</label>
+						<label class="flex items-center mb-4 cursor-pointer">
+							<img class="rounded-full size-11 object-cover object-top" src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/671adde1da193f971d909d1e_64bd64c21c8fbfa7a8e0a099_IMG_0916.jpg" alt="Ayisha Sanda" loading="lazy">
+							<span class="ms-2.5">
+								<span class="block text-sm font-medium text-secondary">Ayisha Sanda</span>
+								<span class="block text-xs">MSN APRN PMHNP-BC</span>
+							</span>
+							<input class="radio-dot ms-auto" type="radio" name="heroProvider">
+						</label>
+						<a href="#appointment" class="btn btn-secondary w-full justify-center">Book appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- curved divider -->
+	<svg class="absolute bottom-0 left-0 w-full h-[120px] md:h-[150px] z-[2]" viewBox="0 0 1920 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="none">
+		<path d="M0 118C300 62 588 48 864 72C1195 101 1429 48 1642 68C1762 79 1858 115 1920 155V180H0V118Z" fill="rgba(6,219,184,0.12)"/>
+		<path d="M0 132C318 76 622 68 910 92C1228 118 1458 70 1664 88C1779 98 1866 128 1920 162" stroke="var(--teal)" stroke-width="8" stroke-linecap="round" opacity="0.75"/>
+		<path d="M0 145C310 92 616 82 914 106C1240 132 1464 88 1672 104C1792 113 1875 140 1920 168V180H0V145Z" fill="#fbf7fa"/>
+	</svg>
+</section>
+
+<!-- =============================================== ABOUT + STATS ======== -->
+<section id="about" class="relative py-16 md:py-24 overflow-hidden bg-[#fbf7fa]">
+	<div class="absolute inset-0 bg-gradient-to-br from-primary/[0.06] to-transparent -z-[1]"></div>
+	<div class="max-w-[1320px] mx-auto px-6 relative z-[1]">
+
+		<div class="flex flex-wrap justify-center -mx-4 mb-10">
+			<!-- image -->
+			<div class="w-full md:w-7/12 lg:w-5/12 2xl:w-1/3 px-4" data-reveal="left">
+				<div class="relative pb-10 mb-10 mx-6 md:mx-0">
+					<div class="rounded-b-3xl rounded-t-[200px] h-[380px] sm:h-[520px] overflow-hidden">
+						<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/67516937e3cbd61cdead44b2_Hero%20Image-p-800.jpg" alt="Brightlight Oasis mental health care" class="size-full object-cover" width="700" height="900" loading="lazy">
+					</div>
+					<div class="absolute bottom-16 -left-4 xl:-left-10">
+						<div class="flex items-center rounded-full shadow-[0_18px_45px_rgba(22,0,66,0.14)] bg-white p-3 animate-move3">
+							<div class="flex">
+								<span class="mini-avatar mini-avatar--sm -ms-3 first:ms-0">GB</span>
+								<span class="mini-avatar mini-avatar--sm -ms-3">AS</span>
+								<span class="mini-avatar mini-avatar--sm -ms-3">JA</span>
+								<span class="mini-avatar mini-avatar--sm -ms-3">AA</span>
+							</div>
+							<div class="ms-2.5 pe-2">
+								<span class="block text-lg font-bold leading-tight text-primary"><span data-count="24">0</span>h</span>
+								<span class="block text-xs">appointment access</span>
+							</div>
+						</div>
+					</div>
+					<div class="absolute top-16 -left-6 xl:-left-14 size-24 xl:size-36 rounded-full bg-white shadow-[0_18px_45px_rgba(22,0,66,0.14)] grid place-items-center animate-move4">
+						<span class="text-center">
+							<i class="fa-solid fa-hand-holding-heart text-tealdeep text-2xl xl:text-4xl"></i>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- copy -->
+			<div class="w-full lg:w-7/12 2xl:w-1/2 px-4">
+				<div class="lg:ps-6 xl:px-8 md:pt-10 mb-10">
+					<div class="mb-8" data-reveal data-delay="0.15s">
+						<span class="sub-title">Empowering journeys</span>
+						<h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold mb-4">Empowering Journeys to Mental Wellness</h2>
+						<p class="lg:text-lg font-light">
+							Brightlight Oasis is dedicated to providing a comprehensive, individualized treatment plan
+							without compromising evidence-based guidelines. We diagnose and treat mental health disorders
+							with medication management, psychotherapy, and complementary interventions - in clinic or by
+							secure video, whichever fits your life.
+						</p>
+					</div>
+
+					<a href="https://www.youtube.com/watch?v=inpok4MKVLM" target="_blank" rel="noopener" class="btn btn-primary" data-reveal data-delay="0.3s">
+						<i class="fa fa-play"></i>
+						Watch how we work
+					</a>
+				</div>
+			</div>
+
+			<!-- stat tiles -->
+			<div class="w-full 2xl:w-1/6 px-4">
+				<div class="flex flex-wrap -mx-3 2xl:-ms-14">
+					<div class="w-1/2 sm:w-1/3 2xl:w-full px-3" data-reveal="right" data-delay="0.2s">
+						<div class="rounded-2xl p-5 lg:p-8 mb-6 text-center bg-[#E9FBF7]">
+							<span class="block text-[32px] lg:text-5xl font-bold text-secondary"><span data-count="24">0</span>h</span>
+							<h3 class="h-sans text-sm lg:text-lg font-medium mb-0 text-tealdeep">Appointment Access</h3>
+						</div>
+					</div>
+					<div class="w-1/2 sm:w-1/3 2xl:w-full px-3 2xl:translate-x-14" data-reveal="right" data-delay="0.35s">
+						<div class="rounded-2xl p-5 lg:p-8 mb-6 text-center bg-[#F4EFF6]">
+							<span class="block text-[32px] lg:text-5xl font-bold text-secondary">Most</span>
+							<h3 class="h-sans text-sm lg:text-lg font-medium mb-0 text-primary">Insurance Accepted</h3>
+						</div>
+					</div>
+					<div class="w-full sm:w-1/3 2xl:w-full px-3" data-reveal="right" data-delay="0.5s">
+						<div class="rounded-2xl p-5 lg:p-8 mb-6 text-center bg-[#FDF3E8]">
+							<span class="block text-[32px] lg:text-5xl font-bold text-secondary"><span data-count="3">0</span></span>
+							<h3 class="h-sans text-sm lg:text-lg font-medium mb-0 text-green">States Served</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- wellness cards -->
+		<div class="wellness-grid" data-reveal data-delay="0.15s">
+			<div class="wellness-card">
+				<span class="wellness-card__icon-wrap"><span class="wellness-card__icon"><img src="assets/img/well4.png" alt="" width="117" height="117" loading="lazy"></span></span>
+				<h3>Medication Management</h3>
+				<p>Collaborate with experienced and dedicated providers to find the right medication, ensuring safe and effective treatment of mental health conditions.</p>
+			</div>
+			<div class="wellness-card">
+				<span class="wellness-card__icon-wrap"><span class="wellness-card__icon"><img src="assets/img/well2.png" alt="" width="117" height="117" loading="lazy"></span></span>
+				<h3>Complementary and Alternative Interventions</h3>
+				<p>Supporting mental well-being through personalized, evidence-based alternative methods combined with traditional care.</p>
+			</div>
+			<div class="wellness-card">
+				<span class="wellness-card__icon-wrap"><span class="wellness-card__icon"><img src="assets/img/well3.png" alt="" width="117" height="117" loading="lazy"></span></span>
+				<h3>One-on-One Sessions</h3>
+				<p>Collaborate with skilled counselors to explore and address challenges, emotions, and behaviors in a safe and supportive atmosphere.</p>
+			</div>
+			<div class="wellness-card">
+				<span class="wellness-card__icon-wrap"><span class="wellness-card__icon"><img src="assets/img/well5.png" alt="" width="117" height="117" loading="lazy"></span></span>
+				<h3>Family Therapy</h3>
+				<p>Strengthen family dynamics by addressing conflicts, improving communication, and fostering mutual support among family members in a therapeutic setting.</p>
+			</div>
+			<div class="wellness-card">
+				<span class="wellness-card__icon-wrap"><span class="wellness-card__icon"><img src="assets/img/well6.png" alt="" width="117" height="117" loading="lazy"></span></span>
+				<h3>Lifestyle Coaching</h3>
+				<p>Empower yourself with the tools and guidance to make positive life changes, promoting a healthier mindset and improved emotional well-being.</p>
+			</div>
+			<div class="wellness-card">
+				<span class="wellness-card__icon-wrap"><span class="wellness-card__icon"><img src="assets/img/well1.png" alt="" width="117" height="117" loading="lazy"></span></span>
+				<h3>Cognitive Behavioral Therapy (CBT)</h3>
+				<p>Learn practical techniques to identify and change negative thought patterns and behaviors, fostering resilience and better coping strategies in daily life.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ========================================================== TEAM ====== -->
+<section id="team" class="team-section py-16 md:py-24">
+	<div class="max-w-[1320px] mx-auto px-6">
+		<div class="flex flex-wrap items-center -mx-4">
+			<div class="w-full xl:w-1/2 px-4 mb-12 xl:mb-0" data-reveal="left">
+				<div class="team-showcase">
+					<div class="team-showcase__ring"></div>
+					<div class="team-showcase__orbit">
+						<div class="team-showcase__social team-showcase__social--one"><i class="fa-brands fa-linkedin-in"></i></div>
+						<div class="team-showcase__social team-showcase__social--two"><i class="fa-brands fa-instagram"></i></div>
+						<div class="team-showcase__social team-showcase__social--three"><i class="fa-brands fa-facebook-f"></i></div>
+						<div class="team-showcase__social team-showcase__social--four"><i class="fa-brands fa-x-twitter"></i></div>
+					</div>
+					<img class="team-showcase__image" src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/671adde5ae3d00f17a76c36a_648c8d6f077195f061187a01_IMG_0699.jpg" alt="Dr. Gidion Buma" width="1265" height="1600" loading="lazy">
+					<div class="team-showcase__badge">
+						<span><i class="fa-solid fa-circle-check"></i> Medication Management</span>
+						<span><i class="fa-solid fa-circle-check"></i> Telehealth Care</span>
+					</div>
+					<div class="team-showcase__quote">
+						<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/671adde5ae3d00f17a76c36a_648c8d6f077195f061187a01_IMG_0699.jpg" alt="Dr. Gidion Buma" loading="lazy">
+						<div>
+							<h3>Dr. Gidion Buma</h3>
+							<span>DNP PMHNP-BC</span>
+							<p>Experienced, compassionate providers empowering journeys to mental wellness.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-full xl:w-1/2 px-4" data-reveal data-delay="0.15s">
+				<div class="mb-8">
+					<span class="sub-title">Our Team</span>
+					<h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold mb-4">Meet the Team</h2>
+					<p class="lg:text-lg font-light mb-0">
+						Brightlight Oasis is a team of experienced, compassionate, and dedicated mental health professionals empowering journeys to mental wellness.
+					</p>
+				</div>
+
+				<div class="grid sm:grid-cols-2 gap-5">
+					<div class="team-member-card">
+						<div class="team-member-card__body">
+							<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/671adde1da193f971d909d1e_64bd64c21c8fbfa7a8e0a099_IMG_0916.jpg" alt="Ayisha Sanda" loading="lazy">
+							<div>
+								<h3>Ayisha Sanda</h3>
+								<span>MSN APRN PMHNP-BC</span>
+							</div>
+						</div>
+						<div class="team-member-card__links"><i class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-youtube"></i></div>
+					</div>
+					<div class="team-member-card">
+						<div class="team-member-card__body">
+							<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/675b9e670b40ee6a3030812d_IMG_2559.jpg" alt="Juliet Anyanwu" loading="lazy">
+							<div>
+								<h3>Juliet Anyanwu</h3>
+								<span>MSN PMHNP-BC</span>
+							</div>
+						</div>
+						<div class="team-member-card__links"><i class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-youtube"></i></div>
+					</div>
+					<div class="team-member-card">
+						<div class="team-member-card__body">
+							<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/6719df53aa5ffdb2063ae907_670765ef7f55098052d052b6_IMG_2481%20(1).jpg" alt="Alexia Antoine" loading="lazy">
+							<div>
+								<h3>Alexia Antoine</h3>
+								<span>Psychotherapist, MSA, LPC</span>
+							</div>
+						</div>
+						<div class="team-member-card__links"><i class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-youtube"></i></div>
+					</div>
+					<div class="team-member-card">
+						<div class="team-member-card__body">
+							<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/671c01c2319002d6cc51270c_646d49fbe8d1cc93cf861853_4.png" alt="Sajid Ali" loading="lazy">
+							<div>
+								<h3>Sajid Ali</h3>
+								<span>Web developer</span>
+							</div>
+						</div>
+						<div class="team-member-card__links"><i class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-youtube"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ========================================================= VIDEOS ====== -->
+<section id="videos" class="video-section py-16 md:py-24">
+	<div class="max-w-[1320px] mx-auto px-6">
+		<div class="max-w-3xl mx-auto text-center mb-12">
+			<span class="sub-title justify-center" data-reveal>Videos</span>
+			<h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold mb-3" data-reveal data-delay="0.1s">See What Makes Brightlight Oasis Different</h2>
+			<p class="lg:text-lg font-light mb-0" data-reveal data-delay="0.2s">Watch quick introductions to our care model, services, therapy, IOP, and wellness programs.</p>
+		</div>
+
+		<div class="swiper video-swiper" data-reveal data-delay="0.25s">
+			<div class="swiper-wrapper video-grid">
+				<div class="swiper-slide h-auto">
+			<a class="video-card" href="https://www.youtube.com/watch?v=MN6uUYW7Z_Q" target="_blank" rel="noopener" aria-label="Watch Brightlight Oasis introduction video">
+				<span class="video-card__media">
+					<img src="https://img.youtube.com/vi/MN6uUYW7Z_Q/hqdefault.jpg" alt="Brightlight Oasis introduction video" loading="lazy">
+					<span class="video-card__play"><i class="fa-solid fa-play"></i></span>
+				</span>
+				<span class="video-card__body">
+					<span class="video-card__title">Brightlight Oasis Introduction</span>
+					<span class="video-card__text">Get to know our approach to accessible mental health care.</span>
+				</span>
+				<span class="video-card__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+			</a>
+				</div>
+				<div class="swiper-slide h-auto">
+			<a class="video-card" href="https://www.youtube.com/watch?v=kSxGyIysQpc" target="_blank" rel="noopener" aria-label="Watch Brightlight Oasis services video">
+				<span class="video-card__media">
+					<img src="https://img.youtube.com/vi/kSxGyIysQpc/hqdefault.jpg" alt="Brightlight Oasis services video" loading="lazy">
+					<span class="video-card__play"><i class="fa-solid fa-play"></i></span>
+				</span>
+				<span class="video-card__body">
+					<span class="video-card__title">Psychiatry and Counseling Services</span>
+					<span class="video-card__text">See how treatment plans are shaped around each patient.</span>
+				</span>
+				<span class="video-card__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+			</a>
+				</div>
+				<div class="swiper-slide h-auto">
+			<a class="video-card" href="https://www.youtube.com/watch?v=as50NTT2eyc" target="_blank" rel="noopener" aria-label="Watch Brightlight Oasis psychotherapy video">
+				<span class="video-card__media">
+					<img src="https://img.youtube.com/vi/as50NTT2eyc/hqdefault.jpg" alt="Brightlight Oasis psychotherapy video" loading="lazy">
+					<span class="video-card__play"><i class="fa-solid fa-play"></i></span>
+				</span>
+				<span class="video-card__body">
+					<span class="video-card__title">Psychotherapy and Counseling</span>
+					<span class="video-card__text">Learn about supportive care for daily life and long-term wellness.</span>
+				</span>
+				<span class="video-card__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+			</a>
+				</div>
+				<div class="swiper-slide h-auto">
+			<a class="video-card" href="https://www.youtube.com/watch?v=iPVGSSgo5rU" target="_blank" rel="noopener" aria-label="Watch Brightlight Oasis IOP video">
+				<span class="video-card__media">
+					<img src="https://img.youtube.com/vi/iPVGSSgo5rU/hqdefault.jpg" alt="Brightlight Oasis IOP video" loading="lazy">
+					<span class="video-card__play"><i class="fa-solid fa-play"></i></span>
+				</span>
+				<span class="video-card__body">
+					<span class="video-card__title">Intensive Outpatient Program</span>
+					<span class="video-card__text">Explore flexible support when weekly therapy is not enough.</span>
+				</span>
+				<span class="video-card__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+			</a>
+				</div>
+				<div class="swiper-slide h-auto">
+			<a class="video-card" href="https://www.youtube.com/watch?v=C5540TWwucw" target="_blank" rel="noopener" aria-label="Watch Brightlight Oasis weightloss video">
+				<span class="video-card__media">
+					<img src="https://img.youtube.com/vi/C5540TWwucw/hqdefault.jpg" alt="Brightlight Oasis weightloss video" loading="lazy">
+					<span class="video-card__play"><i class="fa-solid fa-play"></i></span>
+				</span>
+				<span class="video-card__body">
+					<span class="video-card__title">Weightloss Program</span>
+					<span class="video-card__text">Watch how whole-person wellness support can fit your care plan.</span>
+				</span>
+				<span class="video-card__arrow"><i class="fa-solid fa-arrow-right"></i></span>
+			</a>
+				</div>
+			</div>
+			<div class="mt-10 flex justify-center gap-3">
+				<button type="button" class="swiper-nav video-prev" aria-label="Previous video"><i class="fa fa-arrow-left"></i></button>
+				<button type="button" class="swiper-nav video-next" aria-label="Next video"><i class="fa fa-arrow-right"></i></button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ================================================== APPOINTMENT ======= -->
+<section id="appointment" class="relative bg-secondary bg-blend-overlay bg-cover bg-center py-16 md:py-24" style="background-image:url('https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/667ca989385426bbceeeca43_stigma-image.png');">
+	<div class="absolute inset-0 bg-secondary/92"></div>
+	<div class="max-w-[1320px] mx-auto px-6 relative z-[1]">
+		<div class="flex flex-wrap items-center -mx-4">
+			<div class="w-full lg:w-1/3 px-4 mb-8 lg:mb-0" data-reveal>
+				<span class="sub-title">No waitlist</span>
+				<h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold text-white mb-4">Make An Appointment</h2>
+				<p class="text-white/70 mb-0">Your mental health can't be on a waitlist anymore. Book online in under two minutes - most insurance accepted.</p>
+			</div>
+			<div class="w-full lg:w-2/3 px-4" data-reveal data-delay="0.2s">
+				<form data-demo class="bg-white rounded-2xl p-5 sm:p-7">
+					<div class="flex flex-wrap -mx-2">
+						<div class="w-full sm:w-1/2 xl:w-1/3 px-2 mb-4">
+							<label class="sr-only" for="apName">Your name</label>
+							<input id="apName" class="form-control" type="text" placeholder="Your Name" required>
+						</div>
+						<div class="w-full sm:w-1/2 xl:w-1/3 px-2 mb-4">
+							<label class="sr-only" for="apEmail">Your email</label>
+							<input id="apEmail" class="form-control" type="email" placeholder="Your Email" required>
+						</div>
+						<div class="w-full sm:w-1/2 xl:w-1/3 px-2 mb-4">
+							<label class="sr-only" for="apDate">Preferred date and time</label>
+							<input id="apDate" class="form-control" type="datetime-local" required>
+						</div>
+						<div class="w-full sm:w-1/2 xl:w-1/3 px-2 mb-4">
+							<label class="sr-only" for="apService">Service</label>
+							<select id="apService" class="form-control" required>
+								<option value="">Select a service…</option>
+								<option>Psychiatry / Medication Management</option>
+								<option>Psychotherapy / Counseling</option>
+								<option>Intensive Outpatient Program (IOP)</option>
+								<option>Addiction / Suboxone Treatment</option>
+								<option>Weight Loss Program</option>
+								<option>ADHD Testing</option>
+								<option>Spravato&reg; Treatment</option>
+							</select>
+						</div>
+						<div class="w-full sm:w-1/2 xl:w-1/3 px-2 mb-4">
+							<label class="sr-only" for="apProvider">Provider</label>
+							<select id="apProvider" class="form-control">
+								<option value="">Any available provider</option>
+								<option>Dr. Olivia Grant</option>
+								<option>Dr. Amara Reyes</option>
+								<option>William Ndiaye</option>
+								<option>Priya Raman</option>
+							</select>
+						</div>
+						<div class="w-full xl:w-1/3 px-2 mb-4">
+							<button type="submit" class="btn btn-primary w-full justify-center h-14">Book Appointment</button>
+						</div>
+					</div>
+					<p class="form-note hidden text-sm text-primary mt-1"></p>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ====================================================== SERVICES ====== -->
+<section id="services" class="py-16 md:py-24">
+	<div class="max-w-[1320px] mx-auto px-6">
+		<div class="flex flex-wrap items-end -mx-4 mb-12">
+			<div class="w-full lg:w-2/3 px-4">
+				<span class="sub-title" data-reveal>Our services</span>
+				<h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold mb-3" data-reveal data-delay="0.1s">The Best Quality Care You Can Get</h2>
+				<p class="lg:text-lg font-light mb-0" data-reveal data-delay="0.2s">Evidence-based treatment for adults and adolescents - in clinic across Texas, Oregon and Arizona, or by secure video wherever you are.</p>
+			</div>
+			<div class="w-full lg:w-1/3 px-4 lg:text-end mt-6 lg:mt-0" data-reveal data-delay="0.3s">
+				<a href="#appointment" class="btn btn-outline">View All Services <i class="fa-solid fa-arrow-right"></i></a>
+			</div>
+		</div>
+
+		<div class="flex flex-wrap -mx-4">
+			<!-- 1 -->
+			<div class="w-full sm:w-1/2 xl:w-1/4 px-4 mb-8" data-reveal data-delay="0.1s">
+				<div class="service-card">
+					<span class="service-card__icon-wrap"><span class="service-card__icon"><i class="fa-solid fa-user-doctor"></i></span></span>
+					<div class="service-card__top">
+						<h3 class="service-card__title">Psychiatry &amp; Medication Management</h3>
+						<p class="service-card__copy">Diagnosis, medication support, counseling and practical next steps shaped around your goals.</p>
+					</div>
+					<div class="service-card__image">
+						<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/646d49fbe8d1cc93cf8617f3_block-image-hp.original.jpg-p-800.png" alt="Psychiatry and medication management care" width="700" height="480" loading="lazy">
+					</div>
+					<a href="#appointment" class="service-card__link">View All Details <i class="fa-regular fa-circle-right"></i></a>
+				</div>
+			</div>
+			<!-- 2 -->
+			<div class="w-full sm:w-1/2 xl:w-1/4 px-4 mb-8" data-reveal data-delay="0.2s">
+				<div class="service-card">
+					<span class="service-card__icon-wrap"><span class="service-card__icon"><i class="fa-solid fa-comments"></i></span></span>
+					<div class="service-card__top">
+						<h3 class="service-card__title">Psychotherapy / Counseling</h3>
+						<p class="service-card__copy">Individual, group and couples sessions that help you build insight, resilience and steadier days.</p>
+					</div>
+					<div class="service-card__image">
+						<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/667cb0a8bcc6cdbad9f2426f_about-main-banner.png" alt="Psychotherapy and counseling session" width="700" height="480" loading="lazy">
+					</div>
+					<a href="#appointment" class="service-card__link">View All Details <i class="fa-regular fa-circle-right"></i></a>
+				</div>
+			</div>
+			<!-- 3 -->
+			<div class="w-full sm:w-1/2 xl:w-1/4 px-4 mb-8" data-reveal data-delay="0.3s">
+				<div class="service-card">
+					<span class="service-card__icon-wrap"><span class="service-card__icon"><i class="fa-solid fa-hospital-user"></i></span></span>
+					<div class="service-card__top">
+						<h3 class="service-card__title">Intensive Outpatient Program</h3>
+						<p class="service-card__copy">Structured, flexible support when weekly therapy is not quite enough and inpatient care is too much.</p>
+					</div>
+					<div class="service-card__image">
+						<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/6751a7c50da33e122e8859d0_Intensive%20Outpatient%20Session-p-800.jpeg" alt="Intensive outpatient program session" width="700" height="480" loading="lazy">
+					</div>
+					<a href="#appointment" class="service-card__link">View All Details <i class="fa-regular fa-circle-right"></i></a>
+				</div>
+			</div>
+			<!-- 4 -->
+			<div class="w-full sm:w-1/2 xl:w-1/4 px-4 mb-8" data-reveal data-delay="0.4s">
+				<div class="service-card">
+					<span class="service-card__icon-wrap"><span class="service-card__icon"><i class="fa-solid fa-capsules"></i></span></span>
+					<div class="service-card__top">
+						<h3 class="service-card__title">Addiction &amp; Suboxone Treatment</h3>
+						<p class="service-card__copy">Evidence-based medication treatment and steady support for sobriety and mental wellness.</p>
+					</div>
+					<div class="service-card__image">
+						<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/667cbff64053c2836e35205a_intro-image.png" alt="Addiction and Suboxone treatment support" width="700" height="480" loading="lazy">
+					</div>
+					<a href="#appointment" class="service-card__link">View All Details <i class="fa-regular fa-circle-right"></i></a>
+				</div>
+			</div>
+			<!-- 5 -->
+			<div class="w-full sm:w-1/2 xl:w-1/4 px-4 mb-8" data-reveal data-delay="0.1s">
+				<div class="service-card">
+					<span class="service-card__icon-wrap"><span class="service-card__icon"><i class="fa-solid fa-clipboard-question"></i></span></span>
+					<div class="service-card__top">
+						<h3 class="service-card__title">ADHD Testing</h3>
+						<p class="service-card__copy">Online or in-clinic assessments for attention, activity and impulsivity, with clear next steps.</p>
+					</div>
+					<div class="service-card__image">
+						<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617c7/646d49fbe8d1cc93cf86196e_pexels-yan-krukau-5792901-p-800.jpeg" alt="ADHD testing and assessment" width="700" height="480" loading="lazy">
+					</div>
+					<a href="#appointment" class="service-card__link">View All Details <i class="fa-regular fa-circle-right"></i></a>
+				</div>
+			</div>
+			<!-- 6 -->
+			<div class="w-full sm:w-1/2 xl:w-1/4 px-4 mb-8" data-reveal data-delay="0.2s">
+				<div class="service-card">
+					<span class="service-card__icon-wrap"><span class="service-card__icon"><i class="fa-solid fa-prescription-bottle-medical"></i></span></span>
+					<div class="service-card__top">
+						<h3 class="service-card__title">Spravato&reg; Treatment</h3>
+						<p class="service-card__copy">Esketamine treatment for resistant depression, delivered with monitoring and ongoing care.</p>
+					</div>
+					<div class="service-card__image">
+						<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/667ca97d3b72399f4ddf7d98_services-main-banner-p-500.png" alt="Spravato treatment" width="700" height="480" loading="lazy">
+					</div>
+					<a href="#appointment" class="service-card__link">View All Details <i class="fa-regular fa-circle-right"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<!-- quote band -->
+		<div class="relative rounded-3xl overflow-hidden mt-6 bg-secondary" data-reveal>
+			<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/667ca97d3b72399f4ddf7d98_services-main-banner.png" alt="" class="absolute inset-0 size-full object-cover opacity-25" loading="lazy">
+			<div class="relative z-[1] px-6 py-12 md:py-16 text-center max-w-3xl mx-auto">
+				<i class="fa-solid fa-quote-left text-teal text-3xl mb-5 block"></i>
+				<p class="font-display italic text-white text-xl sm:text-2xl xl:text-3xl leading-snug mb-4">
+					Without mental health there can be no true physical health.
+				</p>
+				<span class="text-teal text-sm font-medium">Dr. Brock Chisholm - first Director-General of the WHO</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================== FREE CONSULTATION ======= -->
+<section class="py-16 md:py-24 bg-light/60">
+	<div class="max-w-[1320px] mx-auto px-6">
+		<div class="flex flex-wrap items-center -mx-4">
+			<div class="w-full lg:w-1/2 px-4 mb-10 lg:mb-0">
+				<span class="sub-title" data-reveal>Free consultation</span>
+				<h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold mb-4" data-reveal data-delay="0.1s">Unlock Your Path to Mental Wellness</h2>
+				<p class="lg:text-lg font-light mb-8" data-reveal data-delay="0.2s">
+					Experience the benefits of a personalized mental health journey with our free consultation.
+				</p>
+
+				<div class="consultation-list" data-reveal data-delay="0.3s">
+					<div class="consultation-item">
+						<span class="consultation-item__icon"><i class="fa-solid fa-brain"></i></span>
+						<div>
+							<h3>Expert guidance from experienced and dedicated professionals</h3>
+						</div>
+					</div>
+					<div class="consultation-item">
+						<span class="consultation-item__icon"><i class="fa-solid fa-brain"></i></span>
+						<div>
+							<h3>Personalized assessment of your mental health needs</h3>
+						</div>
+					</div>
+					<div class="consultation-item">
+						<span class="consultation-item__icon"><i class="fa-solid fa-brain"></i></span>
+						<div>
+							<h3>Discuss your concerns and goals in a safe, supportive environment</h3>
+						</div>
+					</div>
+					<div class="consultation-item">
+						<span class="consultation-item__icon"><i class="fa-solid fa-brain"></i></span>
+						<div>
+							<h3>Learn about our tailored treatment options and services</h3>
+						</div>
+					</div>
+					<div class="consultation-item">
+						<span class="consultation-item__icon"><i class="fa-solid fa-brain"></i></span>
+						<div>
+							<h3>In-app medications requests and refills</h3>
+						</div>
+					</div>
+					<div class="consultation-item">
+						<span class="consultation-item__icon"><i class="fa-solid fa-brain"></i></span>
+						<div>
+							<h3>No obligation - a risk-free opportunity to explore your path to mental wellness</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-full lg:w-1/2 px-4" data-reveal="right">
+				<div class="relative lg:ps-10">
+					<div class="flex flex-wrap -mx-3">
+						<div class="w-1/2 px-3">
+							<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/646d49fbe8d1cc93cf8617f4_block-image-hp.original.jpg%20(1).png" alt="Brightlight Oasis mental health consultation" class="w-full rounded-2xl object-cover aspect-[3/4] mb-6" loading="lazy">
+							<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617c7/646d49fbe8d1cc93cf8618da_pexels-anastasia-shuraeva-7173479-p-800.jpeg" alt="Supportive mental health care" class="w-full rounded-2xl object-cover aspect-[6/5]" loading="lazy">
+						</div>
+						<div class="w-1/2 px-3 pt-10">
+							<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/6751946749769dd319995b5c_pexels-rdne-7889242-p-800.jpg" alt="Personalized mental health treatment planning" class="w-full rounded-2xl object-cover aspect-[6/5] mb-6" loading="lazy">
+							<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/667cbff64053c2836e35202b_changing-lives-image.png" alt="Supportive mental health consultation" class="w-full rounded-2xl object-cover aspect-[3/4]" loading="lazy">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ==================================================== CONDITIONS ====== -->
+<section id="conditions" class="py-16 md:py-24">
+	<div class="max-w-[1320px] mx-auto px-6">
+		<div class="max-w-2xl mb-12">
+			<span class="sub-title" data-reveal>Conditions</span>
+			<h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold mb-3" data-reveal data-delay="0.1s">Conditions We Treat</h2>
+			<p class="lg:text-lg font-light mb-0" data-reveal data-delay="0.2s">Brightlight Oasis is compassionate and dedicated to treating a diverse range of mental health conditions - from depression and anxiety to bipolar disorder, ADHD and PTSD.</p>
+		</div>
+
+		<div class="flex flex-wrap -mx-3">
+			<div class="w-full md:w-1/2 xl:w-1/3 px-3 mb-6" data-reveal data-delay="0.1s">
+				<div class="condition-card">
+					<div class="condition-card__body">
+						<h3 class="condition-card__title">Major Depressive Disorder</h3>
+						<p class="condition-card__copy">Persistent sadness, hopelessness and loss of interest that can interfere with daily functioning.</p>
+					</div>
+					<a href="#appointment" class="condition-card__link">Read More <i class="fa-regular fa-circle-right"></i></a>
+					<span class="condition-card__icon-wrap"><span class="condition-card__icon"><i class="fa-solid fa-cloud-rain"></i></span></span>
+				</div>
+			</div>
+			<div class="w-full md:w-1/2 xl:w-1/3 px-3 mb-6" data-reveal data-delay="0.18s">
+				<div class="condition-card">
+					<div class="condition-card__body">
+						<h3 class="condition-card__title">Anxiety Disorders</h3>
+						<p class="condition-card__copy">Excessive worry, fear or nervousness that feels hard to control and interrupts everyday life.</p>
+					</div>
+					<a href="#appointment" class="condition-card__link">Read More <i class="fa-regular fa-circle-right"></i></a>
+					<span class="condition-card__icon-wrap"><span class="condition-card__icon"><i class="fa-solid fa-wind"></i></span></span>
+				</div>
+			</div>
+			<div class="w-full md:w-1/2 xl:w-1/3 px-3 mb-6" data-reveal data-delay="0.26s">
+				<div class="condition-card">
+					<div class="condition-card__body">
+						<h3 class="condition-card__title">ADHD</h3>
+						<p class="condition-card__copy">Patterns of inattention, impulsivity or hyperactivity that affect school, work and relationships.</p>
+					</div>
+					<a href="#appointment" class="condition-card__link">Read More <i class="fa-regular fa-circle-right"></i></a>
+					<span class="condition-card__icon-wrap"><span class="condition-card__icon"><i class="fa-solid fa-brain"></i></span></span>
+				</div>
+			</div>
+			<div class="w-full md:w-1/2 xl:w-1/3 px-3 mb-6" data-reveal data-delay="0.1s">
+				<div class="condition-card">
+					<div class="condition-card__body">
+						<h3 class="condition-card__title">Bipolar Disorder</h3>
+						<p class="condition-card__copy">Mood shifts that include emotional highs, depression and changes in sleep, energy or focus.</p>
+					</div>
+					<a href="#appointment" class="condition-card__link">Read More <i class="fa-regular fa-circle-right"></i></a>
+					<span class="condition-card__icon-wrap"><span class="condition-card__icon"><i class="fa-solid fa-wave-square"></i></span></span>
+				</div>
+			</div>
+			<div class="w-full md:w-1/2 xl:w-1/3 px-3 mb-6" data-reveal data-delay="0.18s">
+				<div class="condition-card">
+					<div class="condition-card__body">
+						<h3 class="condition-card__title">PTSD</h3>
+						<p class="condition-card__copy">Trauma-related symptoms such as flashbacks, nightmares, hypervigilance and severe anxiety.</p>
+					</div>
+					<a href="#appointment" class="condition-card__link">Read More <i class="fa-regular fa-circle-right"></i></a>
+					<span class="condition-card__icon-wrap"><span class="condition-card__icon"><i class="fa-solid fa-shield-heart"></i></span></span>
+				</div>
+			</div>
+			<div class="w-full md:w-1/2 xl:w-1/3 px-3 mb-6" data-reveal data-delay="0.26s">
+				<div class="condition-card">
+					<div class="condition-card__body">
+						<h3 class="condition-card__title">Schizophrenia</h3>
+						<p class="condition-card__copy">Changes in thinking, perception and behavior, sometimes involving hallucinations or delusions.</p>
+					</div>
+					<a href="#appointment" class="condition-card__link">Read More <i class="fa-regular fa-circle-right"></i></a>
+					<span class="condition-card__icon-wrap"><span class="condition-card__icon"><i class="fa-solid fa-user-doctor"></i></span></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="text-center mt-4" data-reveal>
+			<a href="#appointment" class="btn btn-primary">View All Conditions <i class="fa-solid fa-arrow-right"></i></a>
+		</div>
+	</div>
+</section>
+
+<!-- ================================================= ABOUT DOCTOR ======= -->
+<section class="hidden py-16 md:py-24 bg-light/60 overflow-hidden">
+	<div class="max-w-[1320px] mx-auto px-6">
+		<div class="flex flex-wrap items-center -mx-4">
+			<div class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0" data-reveal="left">
+				<div class="relative max-w-[520px] mx-auto">
+					<div class="rounded-t-[220px] rounded-b-3xl overflow-hidden">
+						<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/6751946749769dd319995b5c_pexels-rdne-7889242-p-1600.jpg" alt="Mental health care setting" class="w-full object-cover aspect-[7/9]" width="700" height="900" loading="lazy">
+					</div>
+					<div class="absolute bottom-8 -right-2 lg:-right-8 bg-white rounded-2xl shadow-[0_22px_55px_rgba(22,0,66,0.16)] px-6 py-5 text-center animate-move3">
+						<span class="block text-4xl font-bold text-primary leading-none"><span data-count="20">0</span>+</span>
+						<span class="text-sm font-medium text-secondary">Years Experience</span>
+					</div>
+					<div class="absolute top-10 -left-2 lg:-left-8 bg-white rounded-2xl shadow-[0_22px_55px_rgba(22,0,66,0.16)] px-5 py-4 animate-move4">
+						<span class="block text-xs uppercase tracking-widest text-primary font-semibold mb-1">Accredited</span>
+						<span class="block text-sm font-semibold text-secondary leading-tight">Quality &amp; Accreditation<br>Institute</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-full lg:w-1/2 px-4 lg:ps-12">
+				<span class="sub-title" data-reveal>Medical director</span>
+				<h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold mb-3" data-reveal data-delay="0.1s">About Dr. Amara Reyes</h2>
+				<p class="font-light mb-6" data-reveal data-delay="0.2s">
+					Board-certified psychiatrist and medical director at Brightlight Oasis. She built the practice around a
+					simple idea: everyone deserves equal access to quality mental health care, delivered without a waitlist
+					and without cutting corners on evidence-based guidelines.
+				</p>
+
+				<h3 class="text-xl font-semibold mb-5" data-reveal data-delay="0.25s">Areas of focus</h3>
+				<div class="flex flex-wrap -mx-3 mb-8" data-reveal data-delay="0.3s">
+					<div class="w-full sm:w-1/2 px-3 mb-5">
+						<div class="flex justify-between text-sm font-medium text-secondary mb-2"><span>Medication management</span><span>96%</span></div>
+						<div class="skill-bar h-2 rounded-full bg-white overflow-hidden" data-value="96"><span></span></div>
+					</div>
+					<div class="w-full sm:w-1/2 px-3 mb-5">
+						<div class="flex justify-between text-sm font-medium text-secondary mb-2"><span>Cognitive behavioral therapy</span><span>92%</span></div>
+						<div class="skill-bar h-2 rounded-full bg-white overflow-hidden" data-value="92"><span></span></div>
+					</div>
+					<div class="w-full sm:w-1/2 px-3 mb-5">
+						<div class="flex justify-between text-sm font-medium text-secondary mb-2"><span>Addiction medicine</span><span>88%</span></div>
+						<div class="skill-bar h-2 rounded-full bg-white overflow-hidden" data-value="88"><span></span></div>
+					</div>
+					<div class="w-full sm:w-1/2 px-3 mb-5">
+						<div class="flex justify-between text-sm font-medium text-secondary mb-2"><span>Treatment-resistant depression</span><span>90%</span></div>
+						<div class="skill-bar h-2 rounded-full bg-white overflow-hidden" data-value="90"><span></span></div>
+					</div>
+				</div>
+
+				<div class="flex flex-wrap items-center gap-4" data-reveal data-delay="0.4s">
+					<a href="#appointment" class="btn btn-primary">Book with Dr. Reyes</a>
+					<span class="font-display italic text-lg text-secondary">Dr. Amara Reyes, MD</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ======================================================= PRICING ====== -->
+<section id="pricing" class="pricing-section py-16 md:py-24">
+	<div class="max-w-[1320px] mx-auto px-6">
+		<div class="max-w-2xl mx-auto text-center mb-10">
+			<span class="sub-title" data-reveal>Self-pay rates</span>
+			<h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold mb-3" data-reveal data-delay="0.1s">Brightlight Oasis Affordable Plans</h2>
+			<p class="lg:text-lg font-light mb-0" data-reveal data-delay="0.2s">We believe everyone deserves equal access to quality mental health care. Our budget-friendly plans are designed to support your journey.</p>
+		</div>
+
+		<div class="flex justify-center mb-12" data-reveal data-delay="0.25s">
+			<div class="pricing-toggle inline-flex gap-1 p-1.5 rounded-full bg-white">
+				<button type="button" data-plan="visit" class="px-6 py-2.5 rounded-full text-sm font-medium bg-secondary text-white transition">Per Visit</button>
+				<button type="button" data-plan="yearly" class="px-6 py-2.5 rounded-full text-sm font-medium text-[color:var(--secondary)] transition">Yearly Plan</button>
+			</div>
+		</div>
+
+		<div class="flex flex-wrap justify-center -mx-4">
+			<!-- Psychiatry -->
+			<div class="w-full md:w-1/2 xl:w-1/3 px-4 mb-8" data-reveal data-delay="0.1s">
+				<div class="pricing-card">
+					<span class="pricing-card__eyebrow">Psychiatry</span>
+					<h3 class="pricing-card__title">Psychiatry &amp; Medication Management</h3>
+
+					<div class="pricing-card__price" data-price-group="visit">
+						<div class="pricing-row">
+							<span class="pricing-row__label">Initial<br>Appointment</span>
+							<div class="pricing-row__meta">
+								<span class="pricing-row__amount">$250</span>
+								<span class="pricing-row__note">/Per Visit</span>
+							</div>
+						</div>
+						<div class="pricing-row">
+							<span class="pricing-row__label">Follow-up<br>Appointment</span>
+							<div class="pricing-row__meta">
+								<span class="pricing-row__amount">$150</span>
+								<span class="pricing-row__note">/Per Visit or Refill</span>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-card__price hidden" data-price-group="yearly">
+						<div class="pricing-row">
+							<span class="pricing-row__label">Yearly<br>Plan <span class="pricing-row__deal">Deal</span></span>
+							<div class="pricing-row__meta">
+								<span class="pricing-row__amount">$299.99</span>
+								<span class="pricing-row__note">$80 per follow-up/monthly refill</span>
+							</div>
+						</div>
+					</div>
+
+					<h4 class="pricing-card__included">Included</h4>
+					<ul class="pricing-card__list">
+						<li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-primary mt-1"></i>Comprehensive psychiatric evaluation</li>
+						<li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-primary mt-1"></i>Personalized medication plan</li>
+						<li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-primary mt-1"></i>In-app requests and refills</li>
+						<li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-primary mt-1"></i>Telehealth or in-clinic visits</li>
+					</ul>
+					<p class="pricing-card__promo">Promotional Rates</p>
+					<a href="#appointment" class="btn btn-outline w-full justify-center">Schedule Appointment</a>
+				</div>
+			</div>
+
+			<!-- Psychotherapy (featured) -->
+			<div class="w-full md:w-1/2 xl:w-1/3 px-4 mb-8" data-reveal data-delay="0.2s">
+				<div class="pricing-card pricing-card--featured xl:-mt-4 xl:mb-4">
+					<span class="pricing-card__badge">Most booked</span>
+					<span class="pricing-card__eyebrow">Therapy</span>
+					<h3 class="pricing-card__title text-white">Psychotherapy / Counseling</h3>
+
+					<div class="pricing-card__price" data-price-group="visit">
+						<div class="pricing-row">
+							<span class="pricing-row__label">Individual<br>Therapy</span>
+							<div class="pricing-row__meta">
+								<span class="pricing-row__amount">$90</span>
+								<span class="pricing-row__note">/Per Visit</span>
+							</div>
+						</div>
+						<div class="pricing-row">
+							<span class="pricing-row__label">Family/Couple<br>Therapy</span>
+							<div class="pricing-row__meta">
+								<span class="pricing-row__amount">$120</span>
+								<span class="pricing-row__note">/Per Visit /Family</span>
+							</div>
+						</div>
+						<div class="pricing-row">
+							<span class="pricing-row__label">Group<br>Therapy <span class="pricing-row__deal">Deal</span></span>
+							<div class="pricing-row__meta">
+								<span class="pricing-row__amount">$75</span>
+								<span class="pricing-row__note">/Per Person</span>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-card__price hidden" data-price-group="yearly">
+						<div class="pricing-row">
+							<span class="pricing-row__label">Yearly<br>Plan <span class="pricing-row__deal">Deal</span></span>
+							<div class="pricing-row__meta">
+								<span class="pricing-row__amount">$960</span>
+								<span class="pricing-row__note">12 sessions, two free</span>
+							</div>
+						</div>
+					</div>
+
+					<h4 class="pricing-card__included text-white">Included</h4>
+					<ul class="pricing-card__list text-white/80">
+						<li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-teal mt-1"></i>Individual, family and couples sessions</li>
+						<li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-teal mt-1"></i>Cognitive behavioral therapy</li>
+						<li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-teal mt-1"></i>Lifestyle coaching</li>
+						<li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-teal mt-1"></i>Group therapy access</li>
+					</ul>
+					<p class="pricing-card__promo text-white/50">Promotional Rates</p>
+					<a href="#appointment" class="btn btn-primary w-full justify-center">Schedule Appointment</a>
+				</div>
+			</div>
+
+			<!-- ADHD -->
+			<div class="w-full md:w-1/2 xl:w-1/3 px-4 mb-8" data-reveal data-delay="0.3s">
+				<div class="pricing-card">
+					<span class="pricing-card__eyebrow">Assessment</span>
+					<h3 class="pricing-card__title">ADHD Testing</h3>
+
+					<div class="pricing-card__price" data-price-group="visit">
+						<div class="pricing-row">
+							<span class="pricing-row__label">Online or In-<br>Office</span>
+							<div class="pricing-row__meta">
+								<span class="pricing-row__amount">$150</span>
+								<span class="pricing-row__note">/Per Visit</span>
+							</div>
+						</div>
+					</div>
+					<div class="pricing-card__price hidden" data-price-group="yearly">
+						<div class="pricing-row">
+							<span class="pricing-row__label">Online or In-<br>Office</span>
+							<div class="pricing-row__meta">
+								<span class="pricing-row__amount">$150</span>
+								<span class="pricing-row__note">One-time assessment</span>
+							</div>
+						</div>
+					</div>
+
+					<h4 class="pricing-card__included">Included</h4>
+					<ul class="pricing-card__list">
+						<li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-primary mt-1"></i>FDA-cleared testing protocol</li>
+						<li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-primary mt-1"></i>Measures attention and impulsivity</li>
+						<li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-primary mt-1"></i>Results in 15-20 minutes</li>
+						<li class="flex gap-2.5"><i class="fa-solid fa-circle-check text-primary mt-1"></i>Treatment-planning consult</li>
+					</ul>
+					<p class="pricing-card__promo">Promotional Rates</p>
+					<a href="#appointment" class="btn btn-outline w-full justify-center">Schedule Appointment</a>
+				</div>
+			</div>
+		</div>
+
+		<p class="text-center text-sm mt-2" data-reveal>Promotional self-pay rates available for new patients booking online. Most major insurance accepted.</p>
+	</div>
+</section>
+
+<!-- ===================================================== INSURANCE ====== -->
+<section id="insurance" class="py-14 bg-light/60 overflow-hidden">
+	<div class="max-w-[1320px] mx-auto px-6 mb-8 text-center">
+		<span class="sub-title justify-center" data-reveal>Coverage</span>
+		<h2 class="text-2xl sm:text-3xl font-bold mb-2" data-reveal data-delay="0.1s">Insurance We Accept</h2>
+		<p class="mb-0" data-reveal data-delay="0.2s">We accept most major plans. See the full list of insurances we accept.</p>
+	</div>
+	<div class="insurance-grid" data-reveal data-delay="0.25s">
+		<span class="insurance-logo"><img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/646d49fbe8d1cc93cf86180a_insurance-logo-aetna.png" alt="Aetna" loading="lazy"></span>
+		<span class="insurance-logo"><img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/646d49fbe8d1cc93cf86180b_insurance-logo-anthem.png" alt="Anthem" loading="lazy"></span>
+		<span class="insurance-logo"><img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/646d49fbe8d1cc93cf86180c_insurance-logo-cigna.png" alt="Cigna" loading="lazy"></span>
+		<span class="insurance-logo"><img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617bc/646d49fbe8d1cc93cf86180d_insurance-logo-united.png" alt="UnitedHealthcare" loading="lazy"></span>
+	</div>
+</section>
+
+<!-- ========================================================== BLOG ====== -->
+<section id="blog" class="py-16 md:py-24">
+	<div class="max-w-[1320px] mx-auto px-6">
+		<div class="flex flex-wrap items-end justify-between -mx-4 mb-12">
+			<div class="w-full lg:w-2/3 px-4">
+				<span class="sub-title" data-reveal>From the blog</span>
+				<h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold mb-0" data-reveal data-delay="0.1s">News And Updates</h2>
+			</div>
+			<div class="w-full lg:w-1/3 px-4 lg:text-end mt-6 lg:mt-0 flex lg:justify-end gap-3" data-reveal data-delay="0.2s">
+				<button class="nav-btn blog-prev" aria-label="Previous posts"><i class="fa-solid fa-arrow-left"></i></button>
+				<button class="nav-btn blog-next" aria-label="Next posts"><i class="fa-solid fa-arrow-right"></i></button>
+			</div>
+		</div>
+
+		<div class="swiper blog-swiper" data-reveal data-delay="0.25s">
+			<div class="swiper-wrapper pb-2">
+				<div class="swiper-slide">
+					<article class="group h-full rounded-2xl overflow-hidden bg-white border border-primary/10 transition duration-300 hover:shadow-[0_24px_50px_rgba(22,0,66,0.12)]">
+						<a href="#blog" class="block overflow-hidden aspect-[16/10]">
+							<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617c7/646d49fbe8d1cc93cf8618ce_blog-imag5-p-500.png" alt="" class="size-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+						</a>
+						<div class="p-6">
+							<span class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-3">Wellness</span>
+							<h3 class="blog-card-title text-lg font-semibold mb-3 leading-snug"><a href="#blog" class="hover:text-teal transition">Five signs it's time to talk to a psychiatric provider</a></h3>
+							<p class="text-sm mb-5">Persistent changes in sleep, appetite, focus or mood are worth a conversation - here's how to tell.</p>
+							<div class="flex items-center gap-3 pt-4 border-t border-primary/10 text-xs">
+								<span class="author-avatar">GB</span>
+								<span>By <strong class="text-secondary">Dr. Gidion Buma</strong></span>
+								<span class="ms-auto">17 May 2026</span>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="swiper-slide">
+					<article class="group h-full rounded-2xl overflow-hidden bg-white border border-primary/10 transition duration-300 hover:shadow-[0_24px_50px_rgba(22,0,66,0.12)]">
+						<a href="#blog" class="block overflow-hidden aspect-[16/10]">
+							<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617c7/646d49fbe8d1cc93cf8618cf_blog-imag6-p-500.png" alt="" class="size-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+						</a>
+						<div class="p-6">
+							<span class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-3">Treatment</span>
+							<h3 class="blog-card-title text-lg font-semibold mb-3 leading-snug"><a href="#blog" class="hover:text-teal transition">What to expect from your first Spravato&reg; session</a></h3>
+							<p class="text-sm mb-5">A practical walkthrough of the visit, the monitoring period, and how quickly patients notice change.</p>
+							<div class="flex items-center gap-3 pt-4 border-t border-primary/10 text-xs">
+								<span class="author-avatar">AS</span>
+								<span>By <strong class="text-secondary">Ayisha Sanda</strong></span>
+								<span class="ms-auto">03 May 2026</span>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="swiper-slide">
+					<article class="group h-full rounded-2xl overflow-hidden bg-white border border-primary/10 transition duration-300 hover:shadow-[0_24px_50px_rgba(22,0,66,0.12)]">
+						<a href="#blog" class="block overflow-hidden aspect-[16/10]">
+							<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617c7/646d49fbe8d1cc93cf8618cd_blog-imag4-p-500.png" alt="" class="size-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+						</a>
+						<div class="p-6">
+							<span class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-3">Recovery</span>
+							<h3 class="blog-card-title text-lg font-semibold mb-3 leading-snug"><a href="#blog" class="hover:text-teal transition">Is an Intensive Outpatient Program right for you?</a></h3>
+							<p class="text-sm mb-5">More support than weekly therapy, less disruption than inpatient care. Here's who benefits most.</p>
+							<div class="flex items-center gap-3 pt-4 border-t border-primary/10 text-xs">
+								<span class="author-avatar">JA</span>
+								<span>By <strong class="text-secondary">Juliet Anyanwu</strong></span>
+								<span class="ms-auto">21 Apr 2026</span>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="swiper-slide">
+					<article class="group h-full rounded-2xl overflow-hidden bg-white border border-primary/10 transition duration-300 hover:shadow-[0_24px_50px_rgba(22,0,66,0.12)]">
+						<a href="#blog" class="block overflow-hidden aspect-[16/10]">
+							<img src="https://cdn.prod.website-files.com/646d49fbe8d1cc93cf8617c7/646d49fbe8d1cc93cf8618cc_blog-imag3-p-500.png" alt="" class="size-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+						</a>
+						<div class="p-6">
+							<span class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-3">ADHD</span>
+							<h3 class="blog-card-title text-lg font-semibold mb-3 leading-snug"><a href="#blog" class="hover:text-teal transition">Adult ADHD: why so many diagnoses come late</a></h3>
+							<p class="text-sm mb-5">Symptoms that get mislabelled as stress or disorganisation - and what a 20-minute assessment reveals.</p>
+							<div class="flex items-center gap-3 pt-4 border-t border-primary/10 text-xs">
+								<span class="author-avatar">AA</span>
+								<span>By <strong class="text-secondary">Alexia Antoine</strong></span>
+								<span class="ms-auto">08 Apr 2026</span>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- =============================================== SOCIAL UPDATES ======= -->
+<section class="social-updates py-16 md:py-24">
+	<div class="max-w-[1320px] mx-auto px-6">
+		<div class="max-w-3xl mx-auto text-center mb-12">
+			<span class="sub-title justify-center" data-reveal>Stay connected</span>
+			<h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold mb-3" data-reveal data-delay="0.1s">Keep in touch with our latest updates</h2>
+			<p class="lg:text-lg font-light mb-0" data-reveal data-delay="0.2s">Follow Brightlight Oasis Psychiatry &amp; Counseling for care updates, wellness resources, and service announcements.</p>
+		</div>
+
+		<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+			<a href="#" class="social-card social-card--facebook" aria-label="Follow Brightlight Oasis on Facebook" data-reveal data-delay="0.1s">
+				<span class="social-card__icon"><i class="fa-brands fa-facebook-f"></i></span>
+				<span class="social-card__name">Facebook</span>
+				<span class="social-card__cta">Follow updates</span>
+			</a>
+			<a href="#" class="social-card social-card--tiktok" aria-label="Follow Brightlight Oasis on TikTok" data-reveal data-delay="0.15s">
+				<span class="social-card__icon"><i class="fa-brands fa-tiktok"></i></span>
+				<span class="social-card__name">TikTok</span>
+				<span class="social-card__cta">Short wellness tips</span>
+			</a>
+			<a href="#" class="social-card social-card--instagram" aria-label="Follow Brightlight Oasis on Instagram" data-reveal data-delay="0.2s">
+				<span class="social-card__icon"><i class="fa-brands fa-instagram"></i></span>
+				<span class="social-card__name">Instagram</span>
+				<span class="social-card__cta">Behind the practice</span>
+			</a>
+			<a href="#" class="social-card social-card--linkedin" aria-label="Follow Brightlight Oasis on LinkedIn" data-reveal data-delay="0.1s">
+				<span class="social-card__icon"><i class="fa-brands fa-linkedin-in"></i></span>
+				<span class="social-card__name">LinkedIn</span>
+				<span class="social-card__cta">Leadership news</span>
+			</a>
+			<a href="#" class="social-card social-card--x" aria-label="Follow Brightlight Oasis on X" data-reveal data-delay="0.15s">
+				<span class="social-card__icon"><i class="fa-brands fa-x-twitter"></i></span>
+				<span class="social-card__name">X</span>
+				<span class="social-card__cta">Real-time notes</span>
+			</a>
+			<a href="#" class="social-card social-card--youtube" aria-label="Follow Brightlight Oasis on YouTube" data-reveal data-delay="0.2s">
+				<span class="social-card__icon"><i class="fa-brands fa-youtube"></i></span>
+				<span class="social-card__name">YouTube</span>
+				<span class="social-card__cta">Watch videos</span>
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- ================================================= TESTIMONIALS ======= -->
+<section id="testimonials" class="py-16 md:py-24 bg-light/60">
+	<div class="max-w-[1320px] mx-auto px-6">
+		<div class="flex flex-wrap items-center -mx-4">
+			<div class="w-full lg:w-1/3 px-4 mb-10 lg:mb-0">
+				<span class="sub-title" data-reveal>Testimonials</span>
+				<h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold mb-5" data-reveal data-delay="0.1s">What our patients say about us</h2>
+				<div class="flex items-center gap-1.5 text-secondary text-sm font-medium mb-6" data-reveal data-delay="0.2s">
+					<ul class="flex gap-0.5 text-yellow-400" aria-label="Rated 4.8 out of 5">
+						<li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>
+					</ul>
+					<span class="font-bold">(4.8)</span>
+					<span>average patient rating</span>
+				</div>
+				<div class="flex gap-3" data-reveal data-delay="0.3s">
+					<button class="nav-btn testimonial-prev" aria-label="Previous testimonial"><i class="fa-solid fa-arrow-left"></i></button>
+					<button class="nav-btn testimonial-next" aria-label="Next testimonial"><i class="fa-solid fa-arrow-right"></i></button>
+				</div>
+			</div>
+
+			<div class="w-full lg:w-2/3 px-4" data-reveal="right" data-delay="0.2s">
+				<div class="swiper testimonial-swiper">
+					<div class="swiper-wrapper pb-4">
+						<div class="swiper-slide h-auto">
+							<div class="h-full rounded-2xl bg-white p-7 border border-primary/10">
+								<i class="fa-solid fa-quote-left text-primary text-2xl mb-4 block"></i>
+								<h3 class="text-lg font-semibold mb-3">Compassionate professionals</h3>
+								<p class="text-sm mb-6">I was seen the same week and actually listened to. My provider explained every option instead of just handing me a prescription. Six months in, I feel like myself again.</p>
+								<div class="flex items-center gap-3 pt-5 border-t border-primary/10">
+									<span class="testimonial-avatar">JP</span>
+									<div>
+										<h5 class="text-base font-semibold mb-0">Jane P.</h5>
+										<span class="text-xs">Austin, TX</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide h-auto">
+							<div class="h-full rounded-2xl bg-white p-7 border border-primary/10">
+								<i class="fa-solid fa-quote-left text-primary text-2xl mb-4 block"></i>
+								<h3 class="text-lg font-semibold mb-3">Tailored support that fits my life</h3>
+								<p class="text-sm mb-6">The telehealth appointments meant I never had to choose between work and treatment. Refill requests go through the app and get handled the same day.</p>
+								<div class="flex items-center gap-3 pt-5 border-t border-primary/10">
+									<span class="testimonial-avatar">MT</span>
+									<div>
+										<h5 class="text-base font-semibold mb-0">Marcus T.</h5>
+										<span class="text-xs">Portland, OR</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide h-auto">
+							<div class="h-full rounded-2xl bg-white p-7 border border-primary/10">
+								<i class="fa-solid fa-quote-left text-primary text-2xl mb-4 block"></i>
+								<h3 class="text-lg font-semibold mb-3">The IOP changed everything</h3>
+								<p class="text-sm mb-6">I needed more than weekly therapy but couldn't step away from my family for inpatient care. The outpatient program gave me structure without taking my life away.</p>
+								<div class="flex items-center gap-3 pt-5 border-t border-primary/10">
+									<span class="testimonial-avatar">AR</span>
+									<div>
+										<h5 class="text-base font-semibold mb-0">Alicia R.</h5>
+										<span class="text-xs">Phoenix, AZ</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide h-auto">
+							<div class="h-full rounded-2xl bg-white p-7 border border-primary/10">
+								<i class="fa-solid fa-quote-left text-primary text-2xl mb-4 block"></i>
+								<h3 class="text-lg font-semibold mb-3">Finally, answers about my ADHD</h3>
+								<p class="text-sm mb-6">Twenty minutes of testing explained thirty years of struggling. The follow-up plan was clear and I knew exactly what came next.</p>
+								<div class="flex items-center gap-3 pt-5 border-t border-primary/10">
+									<span class="testimonial-avatar">DK</span>
+									<div>
+										<h5 class="text-base font-semibold mb-0">Devon K.</h5>
+										<span class="text-xs">Houston, TX</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testimonial-pagination flex justify-center gap-2 mt-6"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ================================================ CONTACT / MAP ======= -->
+<section id="contact" class="py-16 md:py-24">
+	<div class="max-w-[1320px] mx-auto px-6">
+		<div class="flex flex-wrap -mx-4">
+
+			<!-- info + map -->
+			<div id="locations" class="w-full lg:w-1/2 px-4 mb-10 lg:mb-0" data-reveal="left">
+				<div class="rounded-3xl overflow-hidden h-64 sm:h-80 mb-6 bg-light">
+					<iframe
+						title="Brightlight Oasis service area"
+						src="https://www.openstreetmap.org/export/embed.html?bbox=-126.0%2C25.0%2C-93.0%2C47.0&amp;layer=mapnik"
+						class="size-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="flex flex-wrap -mx-3">
+					<div class="w-full sm:w-1/2 px-3 mb-6">
+						<div class="h-full rounded-2xl bg-light/70 p-6">
+							<span class="grid place-items-center size-12 rounded-xl bg-primary text-white text-lg mb-4"><i class="fa-regular fa-clock"></i></span>
+							<h4 class="text-lg font-semibold mb-2">Opening Time</h4>
+							<p class="text-sm mb-0">Mon-Thu: 8:00am - 6:00pm<br>Fri: 8:00am - 1:00pm<br>Telehealth: same-day slots daily</p>
+						</div>
+					</div>
+					<div class="w-full sm:w-1/2 px-3 mb-6">
+						<div class="h-full rounded-2xl bg-light/70 p-6">
+							<span class="grid place-items-center size-12 rounded-xl bg-primary text-white text-lg mb-4"><i class="fa-solid fa-location-dot"></i></span>
+							<h4 class="text-lg font-semibold mb-2">Where We Practice</h4>
+							<p class="text-sm mb-0">Licensed in Texas, Oregon<br>and Arizona<br>In-clinic and secure video</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- form -->
+			<div class="w-full lg:w-1/2 px-4" data-reveal="right">
+				<div class="lg:ps-8">
+					<span class="sub-title">Free consultation</span>
+					<h2 class="text-3xl sm:text-4xl xl:text-5xl font-bold mb-3">Get in Touch With Us</h2>
+					<p class="font-light mb-8">A no-obligation conversation about your concerns and goals - and what treatment could look like for you.</p>
+
+					<form data-demo class="flex flex-wrap -mx-2">
+						<div class="w-full sm:w-1/2 px-2 mb-4">
+							<label class="sr-only" for="cFirst">First name</label>
+							<input id="cFirst" class="form-control" type="text" placeholder="First Name" required>
+						</div>
+						<div class="w-full sm:w-1/2 px-2 mb-4">
+							<label class="sr-only" for="cLast">Last name</label>
+							<input id="cLast" class="form-control" type="text" placeholder="Last Name" required>
+						</div>
+						<div class="w-full sm:w-1/2 px-2 mb-4">
+							<label class="sr-only" for="cEmail">Email</label>
+							<input id="cEmail" class="form-control" type="email" placeholder="Email Address" required>
+						</div>
+						<div class="w-full sm:w-1/2 px-2 mb-4">
+							<label class="sr-only" for="cPhone">Phone number</label>
+							<input id="cPhone" class="form-control" type="tel" placeholder="Phone Number" required>
+						</div>
+						<div class="w-full px-2 mb-4">
+							<label class="sr-only" for="cCondition">Condition</label>
+							<select id="cCondition" class="form-control">
+								<option value="">Select a condition…</option>
+								<option>Major depressive disorder</option>
+								<option>Anxiety disorders</option>
+								<option>ADHD</option>
+								<option>Bipolar disorder</option>
+								<option>PTSD</option>
+								<option>Schizophrenia</option>
+								<option>Substance use disorder</option>
+								<option>Other</option>
+							</select>
+						</div>
+						<div class="w-full px-2 mb-4">
+							<label class="sr-only" for="cMessage">Message</label>
+							<textarea id="cMessage" class="form-control" rows="4" placeholder="How can we help?"></textarea>
+						</div>
+						<div class="w-full px-2">
+							<button type="submit" class="btn btn-primary">Request Free Consultation</button>
+							<p class="form-note hidden text-sm text-primary mt-4"></p>
+							<p class="text-xs mt-4 mb-0">By submitting this form you agree to our privacy policy and to receive information about Brightlight Oasis services.</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+</main>
+
+<!-- ======================================================== FOOTER ====== -->
+<footer class="site-footer relative bg-[#004D49] text-white/82 overflow-hidden">
+	<div class="max-w-[1320px] mx-auto px-6 pt-16 md:pt-20 pb-8 relative z-[1]">
+		<div class="flex flex-wrap -mx-4 pb-12 border-b border-white/10">
+
+			<div class="w-full lg:w-1/3 px-4 mb-10 lg:mb-0">
+				<a href="index.html" class="inline-flex items-center mb-5" aria-label="Brightlight Oasis home">
+					<img src="assets/img/logo-footer.png" alt="Brightlight Oasis Psychiatry &amp; Counseling" class="footer-logo" width="308" height="88" loading="lazy">
+				</a>
+				<p class="text-sm mb-6 max-w-sm">
+					Psychiatry, counseling and addiction care across Texas, Oregon and Arizona. Book your appointment today -
+					no waitlist, most insurance accepted, promotional self-pay rates available.
+				</p>
+				<div class="flex items-center gap-1.5 text-sm mb-6">
+					<ul class="flex gap-0.5 text-yellow-400" aria-label="Rated 4.8 out of 5">
+						<li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>
+					</ul>
+					<span class="font-bold text-white">(4.8)</span>
+					<span>patient rating</span>
+				</div>
+				<ul class="flex gap-3">
+					<li><a href="#" aria-label="Facebook" class="grid place-items-center size-10 rounded-lg bg-white/10 text-white hover:bg-primary transition"><i class="fa-brands fa-facebook-f"></i></a></li>
+					<li><a href="#" aria-label="Instagram" class="grid place-items-center size-10 rounded-lg bg-white/10 text-white hover:bg-primary transition"><i class="fa-brands fa-instagram"></i></a></li>
+					<li><a href="#" aria-label="LinkedIn" class="grid place-items-center size-10 rounded-lg bg-white/10 text-white hover:bg-primary transition"><i class="fa-brands fa-linkedin-in"></i></a></li>
+					<li><a href="#" aria-label="YouTube" class="grid place-items-center size-10 rounded-lg bg-white/10 text-white hover:bg-primary transition"><i class="fa-brands fa-youtube"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="w-1/2 sm:w-1/2 lg:w-1/6 px-4 mb-8 lg:mb-0">
+				<h2 class="footer-heading text-white font-semibold mb-5">Our Services</h2>
+				<ul class="space-y-2.5 text-sm">
+					<li><a href="#services" class="hover:text-teal transition">Psychiatry</a></li>
+					<li><a href="#services" class="hover:text-teal transition">Psychotherapy</a></li>
+					<li><a href="#services" class="hover:text-teal transition">IOP</a></li>
+					<li><a href="#services" class="hover:text-teal transition">Addiction Therapy</a></li>
+					<li><a href="#services" class="hover:text-teal transition">ADHD Testing</a></li>
+					<li><a href="#services" class="hover:text-teal transition">Spravato&reg;</a></li>
+				</ul>
+			</div>
+
+			<div class="w-1/2 sm:w-1/2 lg:w-1/6 px-4 mb-8 lg:mb-0">
+				<h2 class="footer-heading text-white font-semibold mb-5">Common Conditions</h2>
+				<ul class="space-y-2.5 text-sm">
+					<li><a href="#conditions" class="hover:text-teal transition">ADHD</a></li>
+					<li><a href="#conditions" class="hover:text-teal transition">Bipolar Disorder</a></li>
+					<li><a href="#conditions" class="hover:text-teal transition">PTSD</a></li>
+					<li><a href="#conditions" class="hover:text-teal transition">Depression</a></li>
+					<li><a href="#conditions" class="hover:text-teal transition">Anxiety</a></li>
+				</ul>
+			</div>
+
+			<div class="w-1/2 sm:w-1/2 lg:w-1/6 px-4 mb-8 lg:mb-0">
+				<h2 class="footer-heading text-white font-semibold mb-5">Our Locations</h2>
+				<ul class="space-y-2.5 text-sm">
+					<li><a href="#locations" class="hover:text-teal transition">Texas</a></li>
+					<li><a href="#locations" class="hover:text-teal transition">Oregon</a></li>
+					<li><a href="#locations" class="hover:text-teal transition">Arizona</a></li>
+					<li><a href="#locations" class="hover:text-teal transition">Tele-Health</a></li>
+				</ul>
+			</div>
+
+			<div class="w-1/2 sm:w-1/2 lg:w-1/6 px-4">
+				<h2 class="footer-heading text-white font-semibold mb-5">Quick Links</h2>
+				<ul class="space-y-2.5 text-sm">
+					<li><a href="#about" class="hover:text-teal transition">About Us</a></li>
+					<li><a href="#team" class="hover:text-teal transition">Our Team</a></li>
+					<li><a href="#insurance" class="hover:text-teal transition">Insurance</a></li>
+					<li><a href="#pricing" class="hover:text-teal transition">Self-Pay Rates</a></li>
+					<li><a href="#contact" class="hover:text-teal transition">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- newsletter -->
+		<div class="flex flex-wrap items-center -mx-4 py-10 border-b border-white/10">
+			<div class="w-full lg:w-1/2 px-4 mb-6 lg:mb-0">
+				<h2 class="text-white text-2xl font-bold mb-1">Important Updates Waiting for You</h2>
+				<p class="text-sm mb-0">Get our latest mental health resources delivered to your inbox.</p>
+			</div>
+			<div class="w-full lg:w-1/2 px-4">
+				<form data-demo class="flex flex-wrap gap-3">
+					<label class="sr-only" for="nlEmail">Email address</label>
+					<input id="nlEmail" class="form-control flex-1 min-w-[220px] bg-white/10 border-white/15 text-white placeholder:text-white/50" type="email" placeholder="Your email address" required>
+					<button type="submit" class="btn btn-primary">Subscribe Now</button>
+					<p class="form-note hidden w-full text-sm text-teal mb-0"></p>
+				</form>
+			</div>
+		</div>
+
+		<div class="flex flex-wrap items-center justify-between gap-4 pt-8 text-sm">
+			<p class="mb-0">© <span id="year">2026</span> Brightlight Oasis. All rights reserved.</p>
+			<ul class="flex flex-wrap gap-6">
+				<li><a href="#" class="hover:text-teal transition">Terms &amp; Conditions</a></li>
+				<li><a href="#" class="hover:text-teal transition">Privacy Policy</a></li>
+				<li><a href="#" class="hover:text-teal transition">Cookie Policy</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="absolute -bottom-24 -left-24 size-72 rounded-full bg-primary/20 blur-[120px]"></div>
+</footer>
+
+<button id="backToTop" class="fixed bottom-6 right-6 z-[998] size-12 rounded-full bg-primary text-white shadow-[0_10px_30px_rgba(111,57,126,0.45)]" aria-label="Back to top">
+	<i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
