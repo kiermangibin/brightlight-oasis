@@ -57,7 +57,7 @@ python -m http.server 8080
 3. **About + stats** - "Empowering Journeys to Mental Wellness", animated counters, video/checklist band, three numbered hover cards
 4. **Team** - Swiper slider of providers + photo with a "Licensed in" badge
 5. **Appointment** - dark band with a 6-field booking form
-6. **Services** - six service cards (Psychiatry, Psychotherapy, IOP, Addiction, ADHD Testing, Spravato®) + the Brock Chisholm quote band
+6. **Services** - five service cards (Psychiatry, Psychotherapy, Spravato®, Addiction, ADHD Testing) + the Brock Chisholm quote band
 7. **Why choose us** - accordion + staggered image collage with a floating stat
 8. **Conditions we treat** - six condition cards
 9. **Medical director** - portrait with floating badges + animated skill bars
