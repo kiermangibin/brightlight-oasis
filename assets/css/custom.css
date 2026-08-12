@@ -451,7 +451,7 @@
       linear-gradient(rgba(251, 247, 250, 0.45), rgba(251, 247, 250, 0.62)),
       url('../img/bg3.webp');
     background-size: 100% auto;
-    background-position: center 1.5rem;
+    background-position: top center;
     background-repeat: no-repeat;
   }
   .service-card:hover {
