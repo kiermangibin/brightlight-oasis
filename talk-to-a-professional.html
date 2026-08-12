@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Choose a Provider - Brightlight Oasis</title>
+	<meta name="description" content="Choose a Brightlight Oasis provider and continue to the official appointment scheduler.">
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<style type="text/tailwindcss">
+		@theme {
+			--color-primary: #6F397E;
+			--color-primarydark: #572D64;
+			--color-primarylight: #F0E7F3;
+			--color-teal: #06DBB8;
+			--color-tealdeep: #089EAC;
+			--color-peach: #F0C090;
+			--color-green: #185157;
+			--color-secondary: #160042;
+			--color-secondarylight: #282556;
+			--color-heading: #160042;
+			--color-body: #6B7094;
+			--color-light: #F3F5FB;
+			--color-accent: #06DBB8;
+			--font-title: "Montserrat", sans-serif;
+		}
+	</style>
+	<link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body class="antialiased bg-[#fbf7fa]">
+<header class="site-header absolute top-0 left-0 z-[999] w-full">
+	<div class="top-banner bg-[#004D49] text-white/88 py-2.5 hidden lg:block">
+		<div class="max-w-[1320px] mx-auto px-6 flex items-center justify-between text-sm">
+			<ul class="flex items-center gap-6">
+				<li><a href="tel:+15551234567" class="hover:text-teal transition"><i class="fa-solid fa-phone-volume text-teal me-2"></i>+1 (555) 123-4567</a></li>
+				<li><a href="mailto:info@brightlightoasis.com" class="hover:text-teal transition"><i class="fa-regular fa-envelope text-teal me-2"></i>info@brightlightoasis.com</a></li>
+				<li class="hidden xl:block"><i class="fa-solid fa-location-dot text-teal me-2"></i>Serving Texas, Oregon &amp; Arizona</li>
+			</ul>
+			<ul class="flex items-center gap-5">
+				<li><a href="#" aria-label="Facebook" class="hover:text-teal transition"><i class="fa-brands fa-facebook-f"></i></a></li>
+				<li><a href="#" aria-label="Instagram" class="hover:text-teal transition"><i class="fa-brands fa-instagram"></i></a></li>
+				<li><a href="#" aria-label="TikTok" class="hover:text-teal transition"><i class="fa-brands fa-tiktok"></i></a></li>
+				<li><a href="#" aria-label="LinkedIn" class="hover:text-teal transition"><i class="fa-brands fa-linkedin-in"></i></a></li>
+				<li><a href="#" aria-label="YouTube" class="hover:text-teal transition"><i class="fa-brands fa-youtube"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="sticky-bar w-full pt-4 lg:pt-0">
+		<div class="max-w-[1320px] mx-auto px-3 sm:px-6">
+			<div class="header-pill relative flex items-center rounded-[28px] bg-white px-5 lg:px-6 xl:px-8 shadow-[0_12px_36px_rgba(22,0,66,0.12)]">
+				<a href="index.html" class="flex items-center h-[72px] lg:h-20 shrink-0" aria-label="Brightlight Oasis home">
+					<img src="assets/img/logo.png" alt="Brightlight Oasis - Psychiatry &amp; Counseling" class="h-11 lg:h-10 xl:h-14 w-auto" width="564" height="153">
+				</a>
+				<div class="ms-auto flex items-center gap-5">
+					<a href="booking.html" class="font-semibold text-secondary hover:text-primary transition">Booking Options</a>
+					<a href="index.html" class="hidden sm:inline font-semibold text-secondary hover:text-primary transition">Home</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main>
+	<section class="relative overflow-hidden pt-44 pb-16 md:pt-52 md:pb-24">
+		<div class="absolute inset-0 bg-[linear-gradient(180deg,#eafbf7_0%,#f6f2f8_58%,#fbf7fa_100%)]"></div>
+		<div class="absolute inset-0 opacity-70" style="background:url('assets/img/bg3.webp') top center / 100% auto no-repeat;"></div>
+		<div class="max-w-[1320px] mx-auto px-6 relative z-[1]">
+			<div class="max-w-3xl mx-auto text-center mb-12">
+				<span class="sub-title justify-center" id="providerType">Providers</span>
+				<h1 class="text-[34px] sm:text-5xl xl:text-6xl font-bold leading-tight mb-5" id="providerTitle">Click on a Provider to Book Your Appointment</h1>
+				<p class="lg:text-lg font-light mb-0" id="providerIntro">Select an available provider and continue to the official OptiMantra scheduler.</p>
+			</div>
+
+			<div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto" id="providerGrid">
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer class="site-footer relative bg-[#004D49] text-white/82 overflow-hidden">
+	<div class="max-w-[1320px] mx-auto px-6 py-8 relative z-[1] flex flex-wrap items-center justify-between gap-4">
+		<a href="index.html" class="inline-flex items-center" aria-label="Brightlight Oasis home">
+			<img src="assets/img/logo-footer.png" alt="Brightlight Oasis Psychiatry &amp; Counseling" class="footer-logo" width="308" height="88" loading="lazy">
+		</a>
+		<p class="mb-0 text-sm">&copy; <span id="year">2026</span> Brightlight Oasis. All rights reserved.</p>
+	</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+	const psychiatryLinks = [
+		'https://www.optimantra.com/optimus/patient/patientaccess/practsNslots?sid=K212Ymk0Y05GeTBBUDgwM1dHemZ2UT09&pid=VUNVeHpPY1BmeFYxcVVnRDdNMUNQQT09&lid=WStTVndQTVZaN0k1REhtcmNPanh3UT09&hideFooterInFrame=&hideHeaderInFrame=&uid=15467&addOnSids=&src=&srcid=&first=&last=&dob=&email=&ph=&address=&city=&state=&zip=&comments=&additionalReqParamJson=',
+		'https://www.optimantra.com/optimus/patient/patientaccess/practsNslots?sid=MVFBMlJ2dTNydGZSNmZlVTYweUdJUT09&pid=MFBNVXpGcEw3NEwwenJUTnBsdk0wUT09&lid=aklBSFZQdTR2M05rODNyUVhDak9udz09&hideFooterInFrame=&hideHeaderInFrame=&uid=15506&addOnSids=&src=&srcid=&first=&last=&dob=&email=&ph=&address=&city=&state=&zip=&comments=&additionalReqParamJson='
+	];
+	const psychotherapyLink = 'https://www.optimantra.com/optimus/patient/patientaccess/practsNslots?sid=L3ZaY2tzTmhzb3FWZjd5UnZMUDRSZz09&pid=emVsbEFaZXhBQ0ZRK1A0T3Q5akdyQT09&lid=YW1nR2s1VVNBcTZiYkE3aHNZdVRXQT09&hideFooterInFrame=&hideHeaderInFrame=&uid=27830&addOnSids=&src=&srcid=&first=&last=&dob=&email=&ph=&address=&city=&state=&zip=&comments=&additionalReqParamJson=&selPatId=&utm_id=&utm_source=&utm_medium=&utm_campaign=&utm_term=&utm_content=';
+	const isPsychotherapy = new URLSearchParams(window.location.search).get('service') === 'psychotherapy';
+	const providerCount = isPsychotherapy ? 4 : 2;
+	const serviceLabel = isPsychotherapy ? 'Psychotherapy' : 'Psychiatry';
+	const serviceText = isPsychotherapy ? 'Individual, family or couples counseling' : 'Psychiatry and medication management';
+	const icon = isPsychotherapy ? 'fa-user' : 'fa-user-doctor';
+	const links = isPsychotherapy ? Array(providerCount).fill(psychotherapyLink) : psychiatryLinks;
+	const grid = document.getElementById('providerGrid');
+
+	document.title = `Choose a ${serviceLabel} Provider - Brightlight Oasis`;
+	document.getElementById('providerType').textContent = serviceLabel;
+	document.getElementById('providerTitle').textContent = `Choose a ${serviceLabel} Provider`;
+	document.getElementById('providerIntro').textContent = `Select an anonymous ${serviceLabel.toLowerCase()} provider profile and continue to the official booking flow.`;
+	grid.className = `grid md:grid-cols-2 ${isPsychotherapy ? 'xl:grid-cols-4 max-w-6xl' : 'max-w-4xl'} gap-6 mx-auto`;
+
+	grid.innerHTML = links.map((link, index) => `
+		<a href="${link}" class="team-member-card bg-white">
+			<div class="p-6">
+				<div class="w-full ${isPsychotherapy ? 'aspect-square' : 'aspect-[4/3]'} rounded-2xl mb-5 grid place-items-center bg-[linear-gradient(135deg,rgba(6,219,184,0.18),rgba(111,57,126,0.14))]">
+					<span class="grid ${isPsychotherapy ? 'size-20 text-3xl' : 'size-24 text-4xl'} place-items-center rounded-full bg-white text-primary"><i class="fa-solid ${icon}"></i></span>
+				</div>
+				<h2 class="text-xl font-bold mb-2">${serviceLabel} Provider ${index + 1}</h2>
+				<p class="mb-5">${serviceText}</p>
+				<span class="btn btn-primary w-full justify-center">Book Provider <i class="fa-solid fa-arrow-right"></i></span>
+			</div>
+		</a>
+	`).join('');
+</script>
+</body>
+</html>

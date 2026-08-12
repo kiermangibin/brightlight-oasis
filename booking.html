@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book an Appointment - Brightlight Oasis</title>
+	<meta name="description" content="Choose a Brightlight Oasis service and continue to the official appointment booking flow.">
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<style type="text/tailwindcss">
+		@theme {
+			--color-primary: #6F397E;
+			--color-primarydark: #572D64;
+			--color-primarylight: #F0E7F3;
+			--color-teal: #06DBB8;
+			--color-tealdeep: #089EAC;
+			--color-peach: #F0C090;
+			--color-green: #185157;
+			--color-secondary: #160042;
+			--color-secondarylight: #282556;
+			--color-heading: #160042;
+			--color-body: #6B7094;
+			--color-light: #F3F5FB;
+			--color-accent: #06DBB8;
+			--font-title: "Montserrat", sans-serif;
+		}
+	</style>
+	<link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body class="antialiased bg-[#fbf7fa]">
+<header class="site-header absolute top-0 left-0 z-[999] w-full">
+	<div class="top-banner bg-[#004D49] text-white/88 py-2.5 hidden lg:block">
+		<div class="max-w-[1320px] mx-auto px-6 flex items-center justify-between text-sm">
+			<ul class="flex items-center gap-6">
+				<li><a href="tel:+15551234567" class="hover:text-teal transition"><i class="fa-solid fa-phone-volume text-teal me-2"></i>+1 (555) 123-4567</a></li>
+				<li><a href="mailto:info@brightlightoasis.com" class="hover:text-teal transition"><i class="fa-regular fa-envelope text-teal me-2"></i>info@brightlightoasis.com</a></li>
+				<li class="hidden xl:block"><i class="fa-solid fa-location-dot text-teal me-2"></i>Serving Texas, Oregon &amp; Arizona</li>
+			</ul>
+			<ul class="flex items-center gap-5">
+				<li><a href="#" aria-label="Facebook" class="hover:text-teal transition"><i class="fa-brands fa-facebook-f"></i></a></li>
+				<li><a href="#" aria-label="Instagram" class="hover:text-teal transition"><i class="fa-brands fa-instagram"></i></a></li>
+				<li><a href="#" aria-label="TikTok" class="hover:text-teal transition"><i class="fa-brands fa-tiktok"></i></a></li>
+				<li><a href="#" aria-label="LinkedIn" class="hover:text-teal transition"><i class="fa-brands fa-linkedin-in"></i></a></li>
+				<li><a href="#" aria-label="YouTube" class="hover:text-teal transition"><i class="fa-brands fa-youtube"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="sticky-bar w-full pt-4 lg:pt-0">
+		<div class="max-w-[1320px] mx-auto px-3 sm:px-6">
+			<div class="header-pill relative flex items-center rounded-[28px] bg-white px-5 lg:px-6 xl:px-8 shadow-[0_12px_36px_rgba(22,0,66,0.12)]">
+				<a href="index.html" class="flex items-center h-[72px] lg:h-20 shrink-0" aria-label="Brightlight Oasis home">
+					<img src="assets/img/logo.png" alt="Brightlight Oasis - Psychiatry &amp; Counseling" class="h-11 lg:h-10 xl:h-14 w-auto" width="564" height="153">
+				</a>
+				<a href="index.html" class="ms-auto font-semibold text-secondary hover:text-primary transition">Back to Home</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main>
+	<section class="booking-page relative overflow-hidden pt-44 pb-16 md:pt-52 md:pb-24">
+		<div class="absolute inset-0 bg-[linear-gradient(180deg,#eafbf7_0%,#f6f2f8_58%,#fbf7fa_100%)]"></div>
+		<div class="absolute inset-0 opacity-60" style="background:url('assets/img/bg3.webp') top center / 100% auto no-repeat;"></div>
+		<div class="max-w-[1320px] mx-auto px-6 relative z-[1]">
+			<div class="max-w-3xl mb-12">
+				<span class="sub-title">No waitlist</span>
+				<h1 class="text-[34px] sm:text-5xl xl:text-6xl font-bold leading-tight mb-5">Book an Appointment</h1>
+				<p class="lg:text-lg font-light mb-0">Choose the care option you need and continue through Brightlight Oasis' official scheduling flow.</p>
+			</div>
+
+			<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
+				<a href="talk-to-a-professional.html" class="service-card min-h-[18rem]">
+					<span class="service-card__icon-wrap"><span class="service-card__icon"><i class="fa-solid fa-user-doctor"></i></span></span>
+					<div class="service-card__top">
+						<h2 class="service-card__title">Psychiatry / Medication Management</h2>
+						<p class="service-card__copy">Receive a holistic evaluation, diagnosis, medication management and an evidence-based treatment plan.</p>
+					</div>
+					<span class="service-card__link">Book now <i class="fa-regular fa-circle-right"></i></span>
+				</a>
+
+				<a href="talk-to-a-professional.html?service=psychotherapy" class="service-card min-h-[18rem]">
+					<span class="service-card__icon-wrap"><span class="service-card__icon"><i class="fa-solid fa-comments"></i></span></span>
+					<div class="service-card__top">
+						<h2 class="service-card__title">Psychotherapy / Counseling</h2>
+						<p class="service-card__copy">Engage in nonjudgmental, personalized counseling sessions for emotional and mental health support.</p>
+					</div>
+					<span class="service-card__link">Book now <i class="fa-regular fa-circle-right"></i></span>
+				</a>
+
+				<a href="talk-to-a-professional.html" class="service-card min-h-[18rem]">
+					<span class="service-card__icon-wrap"><span class="service-card__icon"><i class="fa-solid fa-capsules"></i></span></span>
+					<div class="service-card__top">
+						<h2 class="service-card__title">Addiction / Suboxone Treatment</h2>
+						<p class="service-card__copy">Access medication-assisted support for alcohol, opioid, benzo and substance recovery care.</p>
+					</div>
+					<span class="service-card__link">Book now <i class="fa-regular fa-circle-right"></i></span>
+				</a>
+
+				<a href="https://www.brightlightoasis.com/en-us/util/adhd-testing" class="service-card min-h-[18rem]">
+					<span class="service-card__icon-wrap"><span class="service-card__icon"><i class="fa-solid fa-clipboard-question"></i></span></span>
+					<div class="service-card__top">
+						<h2 class="service-card__title">ADHD Testing</h2>
+						<p class="service-card__copy">Comprehensive testing and analysis for attention, activity and impulsivity concerns.</p>
+					</div>
+					<span class="service-card__link">Book now <i class="fa-regular fa-circle-right"></i></span>
+				</a>
+
+				<a href="https://www.optimantra.com/optimus/patient/patientaccess/practsNslots?sid=YTVIYnJzNWhZUGhFQjlkOG5OcmNoUT09&amp;pid=Y0N1SS9kVm1JV0p2c0VTb2Z2TDlKdz09&amp;lid=K0lhbHIvaGxuRHVWZXpwQ05JNnc4QT09&amp;hideFooterInFrame=&amp;hideHeaderInFrame=&amp;uid=31148&amp;addOnSids=&amp;src=&amp;srcid=&amp;first=&amp;last=&amp;dob=&amp;email=&amp;ph=&amp;address=&amp;city=&amp;state=&amp;zip=&amp;comments=&amp;additionalReqParamJson=&amp;selPatId=&amp;utm_id=&amp;utm_source=&amp;utm_medium=&amp;utm_campaign=&amp;utm_term=&amp;utm_content=" class="service-card min-h-[18rem]">
+					<span class="service-card__icon-wrap"><span class="service-card__icon"><i class="fa-solid fa-scale-balanced"></i></span></span>
+					<div class="service-card__top">
+						<h2 class="service-card__title">Weightloss Program</h2>
+						<p class="service-card__copy">Continue directly to the official OptiMantra appointment slot flow for weightloss support.</p>
+					</div>
+					<span class="service-card__link">Book now <i class="fa-regular fa-circle-right"></i></span>
+				</a>
+
+				<a href="https://www.brightlightoasis.com/en-us/util/booking-appointment-categories" class="service-card min-h-[18rem]">
+					<span class="service-card__icon-wrap"><span class="service-card__icon"><i class="fa-solid fa-prescription-bottle-medical"></i></span></span>
+					<div class="service-card__top">
+						<h2 class="service-card__title">Spravato&reg; Treatment</h2>
+						<p class="service-card__copy">Review Brightlight's official service booking options for Spravato treatment.</p>
+					</div>
+					<span class="service-card__link">Book now <i class="fa-regular fa-circle-right"></i></span>
+				</a>
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer class="site-footer relative bg-[#004D49] text-white/82 overflow-hidden">
+	<div class="max-w-[1320px] mx-auto px-6 py-8 relative z-[1] flex flex-wrap items-center justify-between gap-4">
+		<a href="index.html" class="inline-flex items-center" aria-label="Brightlight Oasis home">
+			<img src="assets/img/logo-footer.png" alt="Brightlight Oasis Psychiatry &amp; Counseling" class="footer-logo" width="308" height="88" loading="lazy">
+		</a>
+		<p class="mb-0 text-sm">&copy; <span id="year">2026</span> Brightlight Oasis. All rights reserved.</p>
+	</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
