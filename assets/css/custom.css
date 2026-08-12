@@ -882,7 +882,8 @@
       url('../img/bg3.webp') center / cover no-repeat;
   }
   .video-swiper {
-    overflow: visible;
+    overflow: hidden;
+    padding: 0.25rem 0.25rem 0.1rem;
   }
   .video-grid {
     align-items: stretch;
@@ -894,8 +895,9 @@
   .video-card {
     position: relative;
     display: flex;
+    box-sizing: border-box;
     width: 100%;
-    min-height: 25.5rem;
+    min-height: 24rem;
     height: 100%;
     flex-direction: column;
     overflow: visible;
@@ -1032,6 +1034,11 @@
   }
   .video-section .swiper-nav {
     box-shadow: none;
+  }
+  @media (min-width: 1200px) {
+    .video-card {
+      min-height: 25.5rem;
+    }
   }
 
   .blog-card-title {
