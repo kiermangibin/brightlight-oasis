@@ -719,10 +719,9 @@
     z-index: 1;
     height: 42rem;
     width: min(78%, 30rem);
-    object-fit: cover;
-    object-position: top center;
-    border-radius: 16rem 16rem 1.5rem 1.5rem;
-    box-shadow: 0 30px 70px rgba(var(--secondary-rgb), 0.14);
+    object-fit: contain;
+    object-position: bottom center;
+    filter: drop-shadow(0 30px 45px rgba(var(--secondary-rgb), 0.16));
   }
   .team-showcase__social {
     position: absolute;
