@@ -1046,6 +1046,38 @@
     font-weight: 800;
     color: var(--secondary-light);
   }
+  .blog-swiper .swiper-slide {
+    display: flex;
+    height: auto;
+  }
+  .blog-swiper article {
+    display: flex;
+    width: 100%;
+    min-height: 29.5rem;
+    flex-direction: column;
+  }
+  .blog-swiper article > div {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+  }
+  .blog-card-title {
+    display: -webkit-box;
+    min-height: 3rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .blog-card-title + p {
+    display: -webkit-box;
+    min-height: 3.25rem;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+  .blog-card-title + p + div {
+    margin-top: auto;
+  }
 
   /* --------------------------------------------------------------------------
    Pricing
