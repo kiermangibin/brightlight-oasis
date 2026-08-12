@@ -228,21 +228,6 @@
     background-color: var(--primary);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E");
   }
-  .provider-avatar {
-    display: grid;
-    width: 2.75rem;
-    height: 2.75rem;
-    flex: 0 0 auto;
-    place-items: center;
-    border-radius: 9999px;
-    background: rgba(var(--teal-rgb), 0.15);
-    color: var(--teal-deep);
-    font-size: 1rem;
-  }
-  .provider-avatar--therapy {
-    background: rgba(var(--primary-rgb), 0.12);
-    color: var(--primary);
-  }
 
   /* --------------------------------------------------------------------------
    Section heading helper
@@ -884,83 +869,6 @@
     background: #fff;
     padding: 0.85rem 1rem;
     color: var(--secondary-light);
-  }
-  .provider-panel {
-    border-radius: 1.25rem;
-    background: rgba(255, 255, 255, 0.82);
-    box-shadow: 0 18px 45px rgba(var(--secondary-rgb), 0.07);
-    padding: 1.35rem;
-  }
-  .provider-panel__heading {
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 1rem;
-  }
-  .provider-panel__heading .sub-title {
-    margin: 0;
-  }
-  .provider-panel__heading h3 {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: 800;
-    color: var(--secondary-light);
-    text-align: right;
-  }
-  .provider-panel__grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.85rem;
-  }
-  .anonymous-provider-card {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    border-radius: 0.9rem;
-    background: #fff;
-    padding: 0.9rem;
-    box-shadow: 0 10px 28px rgba(var(--secondary-rgb), 0.055);
-  }
-  .anonymous-provider-card__icon {
-    display: grid;
-    width: 2.85rem;
-    height: 2.85rem;
-    flex: 0 0 auto;
-    place-items: center;
-    border-radius: 9999px;
-    background: rgba(var(--teal-rgb), 0.15);
-    color: var(--teal-deep);
-  }
-  .anonymous-provider-card--therapy .anonymous-provider-card__icon {
-    background: rgba(var(--primary-rgb), 0.12);
-    color: var(--primary);
-  }
-  .anonymous-provider-card h4 {
-    margin: 0 0 0.15rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.88rem;
-    font-weight: 800;
-    color: var(--secondary-light);
-  }
-  .anonymous-provider-card p {
-    margin: 0;
-    color: var(--primary);
-    font-size: 0.78rem;
-    font-weight: 600;
-  }
-  @media (max-width: 767px) {
-    .provider-panel__heading {
-      display: block;
-    }
-    .provider-panel__heading h3 {
-      margin-top: 0.35rem;
-      text-align: left;
-    }
-    .provider-panel__grid {
-      grid-template-columns: 1fr;
-    }
   }
 
   /* --------------------------------------------------------------------------
