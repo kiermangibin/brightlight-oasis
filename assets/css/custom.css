@@ -272,6 +272,38 @@
     position: relative;
     z-index: 1;
   }
+  @media (max-width: 575px) {
+    .hero-rating {
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 0.25rem 0.4rem;
+      max-width: 18rem;
+      line-height: 1.25;
+    }
+    .hero-rating ul,
+    .hero-rating .font-bold {
+      flex-shrink: 0;
+    }
+    .hero-rating__copy {
+      flex-basis: 100%;
+      padding-left: 0;
+    }
+    .hero-section .animate-move3 {
+      top: auto !important;
+      bottom: 1.25rem !important;
+      left: 0 !important;
+      max-width: 11rem;
+      padding: 0.85rem;
+      animation: none !important;
+    }
+  }
+  @media (max-width: 767px) {
+    .hero-divider {
+      height: 72px !important;
+      transform: scaleY(0.58);
+      transform-origin: bottom center;
+    }
+  }
 
   /* --------------------------------------------------------------------------
    Numbered service card hover (mirrors the template's box-hover behaviour)
@@ -872,12 +904,13 @@
 
   @media (max-width: 767px) {
     .team-showcase {
-      min-height: 29rem;
+      min-height: 23rem;
       margin-top: 0.25rem;
       place-items: center;
+      margin-bottom: 40px;
     }
     .team-showcase__image {
-      height: 28rem;
+      height: 22rem;
       width: min(100%, 23rem);
       object-position: center bottom;
       transform: translateY(-2.5rem);
@@ -905,15 +938,15 @@
     }
     .team-showcase__social--two {
       top: 17%;
-      left: 19%;
-    }
-    .team-showcase__social--three {
-      top: 27%;
       left: 12%;
     }
+    .team-showcase__social--three {
+      top: 31%;
+      left: 2%;
+    }
     .team-showcase__social--four {
-      top: 38%;
-      left: 8%;
+      top: 48%;
+      left: -1%;
     }
     .team-showcase__badge {
       left: 0.25rem;
@@ -1614,10 +1647,13 @@
       top: 0;
       left: -20rem;
       width: 18rem;
-      height: 100%;
+      height: 100vh;
+      height: 100dvh;
+      max-height: 100dvh;
       background: #fff;
       z-index: 9999;
       overflow-y: auto;
+      overscroll-behavior: contain;
       padding: 0 1.25rem 2rem;
       transition: left 0.5s ease;
     }
