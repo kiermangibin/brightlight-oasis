@@ -736,22 +736,22 @@
     transform: translate(-50%, -50%);
   }
   .team-showcase__social--one {
-    top: 9.5%;
-    left: 21%;
+    top: 10.5%;
+    left: 22%;
   }
   .team-showcase__social--two {
     top: 17.5%;
-    left: 12%;
+    left: 11%;
     color: var(--teal-deep);
   }
   .team-showcase__social--three {
     top: 27.5%;
-    left: 5%;
+    left: 3%;
     color: var(--primary);
   }
   .team-showcase__social--four {
     top: 39.5%;
-    left: 1%;
+    left: -1%;
     color: #0f0f0f;
   }
   .team-showcase__badge,
