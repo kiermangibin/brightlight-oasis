@@ -691,8 +691,8 @@
   }
   .team-showcase__ring {
     position: absolute;
-    top: 2.6rem;
-    left: -2.5rem;
+    top: 11.6rem;
+    left: 1.5rem;
     right: 2.25rem;
     bottom: 1.6rem;
     border-radius: 9999px;
@@ -707,8 +707,8 @@
   }
   .team-showcase__orbit {
     position: absolute;
-    top: 2.6rem;
-    left: -2.5rem;
+    top: 10.6rem;
+    left: 2.5rem;
     right: 2.25rem;
     bottom: 1.6rem;
     z-index: 4;
@@ -720,7 +720,7 @@
     height: 48rem;
     width: min(98%, 42rem);
     object-fit: contain;
-    object-position: bottom center;
+    object-position: center center;
     filter: drop-shadow(0 30px 45px rgba(var(--secondary-rgb), 0.16));
   }
   .team-showcase__social {
