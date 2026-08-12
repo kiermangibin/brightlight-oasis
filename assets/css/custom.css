@@ -717,8 +717,8 @@
   .team-showcase__image {
     position: relative;
     z-index: 1;
-    height: 42rem;
-    width: min(78%, 30rem);
+    height: 48rem;
+    width: min(98%, 42rem);
     object-fit: contain;
     object-position: bottom center;
     filter: drop-shadow(0 30px 45px rgba(var(--secondary-rgb), 0.16));
